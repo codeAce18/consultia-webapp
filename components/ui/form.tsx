@@ -3,7 +3,6 @@
 import * as React from "react"
 import * as LabelPrimitive from "@radix-ui/react-label"
 import { Slot } from "@radix-ui/react-slot"
-import cn from 'classnames';  // or 'clsx'
 import {
   Controller,
   ControllerProps,
@@ -96,7 +95,7 @@ const FormLabel = React.forwardRef<
   return (
     <Label
       ref={ref}
-      className={cn(className, {'text-destructive': error })}
+      className={cn(error && "text-destructive", className ?? "")}
       htmlFor={formItemId}
       {...props}
     />
@@ -136,7 +135,7 @@ const FormDescription = React.forwardRef<
     <p
       ref={ref}
       id={formDescriptionId}
-      className={cn("text-sm text-muted-foreground", className ?? "")}
+      className={cn("text-sm text-muted-foreground", className)}
       {...props}
     />
   )
@@ -158,7 +157,7 @@ const FormMessage = React.forwardRef<
     <p
       ref={ref}
       id={formMessageId}
-      className={cn(className, { 'text-destructive': error })}
+      className={cn("text-sm font-medium text-destructive", className)}
       {...props}
     >
       {body}
