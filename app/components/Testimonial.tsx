@@ -12,7 +12,7 @@ export function Testimonial() {
                 {/* Testimonial 1 */}
                 <div className="max-w-[500px] min-w-[300px] lg:max-w-[500px] rounded-[20px] bg-[#FFFFFF] px-[20px] shadow-custom-black py-[40px] mx-4">
                     <div className="flex flex-col items-center justify-center">
-                    <p className="text-[#101828] text-[16.5px] leading-[23.1px] font-normal max-w-[390.66px]">Consultia has transformed how we manage our clients and projects. It's a game-changer for our firm, streamlining our processes, improving efficiency, and enabling us to focus more on delivering exceptional results to our clients.</p>
+                    <p className="text-[#101828] text-[16.5px] leading-[23.1px] font-normal max-w-[390.66px]">Consultia has transformed how we manage our clients and projects. It&apos;s a game-changer for our firm, streamlining our processes, improving efficiency, and enabling us to focus more on delivering exceptional results to our clients.</p>
                     </div>
                     <div className="px-[10px] pt-[30px] flex items-center justify-start gap-[20px]">
                     <Image src={testimonialImage} alt="testimonialImage" />
@@ -26,7 +26,7 @@ export function Testimonial() {
                 {/* Testimonial 2 */}
                 <div className="max-w-[500px] min-w-[300px] lg:max-w-[500px] rounded-[20px] bg-[#FFFFFF] px-[20px] shadow-custom-black py-[40px] mx-4">
                     <div className="flex flex-col items-center justify-center">
-                    <p className="text-[#101828] text-[16.5px] leading-[23.1px] font-normal max-w-[390.66px]">Consultia has transformed how we manage our clients and projects. It's a game-changer for our firm, streamlining our processes, improving efficiency, and enabling us to focus more on delivering exceptional results to our clients.</p>
+                    <p className="text-[#101828] text-[16.5px] leading-[23.1px] font-normal max-w-[390.66px]">Consultia has transformed how we manage our clients and projects. It&apos;s a game-changer for our firm, streamlining our processes, improving efficiency, and enabling us to focus more on delivering exceptional results to our clients.</p>
                     </div>
                     <div className="px-[10px] pt-[30px] flex items-center justify-start gap-[20px]">
                     <Image src={testimonialImage} alt="testimonialImage" />
@@ -40,7 +40,7 @@ export function Testimonial() {
                 {/* Testimonial 3 */}
                 <div className="max-w-[500px] min-w-[300px] lg:max-w-[500px] rounded-[20px] bg-[#FFFFFF] px-[20px] shadow-custom-black py-[40px] mx-4">
                     <div className="flex flex-col items-center justify-center">
-                    <p className="text-[#101828] text-[16.5px] leading-[23.1px] font-normal max-w-[390.66px]">Consultia has transformed how we manage our clients and projects. It's a game-changer for our firm, streamlining our processes, improving efficiency, and enabling us to focus more on delivering exceptional results to our clients.</p>
+                    <p className="text-[#101828] text-[16.5px] leading-[23.1px] font-normal max-w-[390.66px]">Consultia has transformed how we manage our clients and projects. It&apos;s a game-changer for our firm, streamlining our processes, improving efficiency, and enabling us to focus more on delivering exceptional results to our clients.</p>
                     </div>
                     <div className="px-[10px] pt-[30px] flex items-center justify-start gap-[20px]">
                     <Image src={testimonialImage} alt="testimonialImage" />

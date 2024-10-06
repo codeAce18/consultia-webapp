@@ -160,7 +160,7 @@ export function LoginForm() {
                 color: '#191C1D',
                 fontWeight: 'normal'
             }}>
-                Don't have an account?{" "}
+                Don&apos;t have an account?{" "}
                 <Link href="/signupscreen" style={{
                     color: '#5B52B6',
                     fontWeight: 'semibold'

@@ -6,7 +6,7 @@ import add from "../public/assets/add.svg";
 import { JoinOurMission } from "@/app/components/JoinOurMission";
 import { Footer } from "@/app/components/Footer";
 import { Testimonial } from "@/app/components/Testimonial";
-const faq = () => {
+const Faq = () => {
     // Create an array to manage the open state of multiple accordions
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -366,4 +366,4 @@ const faq = () => {
     );
 };
 
-export default faq;
+export default Faq;

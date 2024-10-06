@@ -56,7 +56,7 @@ const insights = () => {
                         <div className="border-[1px] p-[20px] lg:h-[286px] rounded-[16px] border-[#EFF0F6] max-w-[610px]">
                             <h2 className="text-[#5B52B6] text-[17px] leading-[24px] font-semibold">Featured Analysis</h2>
                             <h1 className="text-[25px] pt-[15px] text-[#101828] font-bold leading-[37.5px] max-w-[570px]">Why You Should Start Caring for Your Mother Now, A Must Read.</h1>
-                            <p className="text-[#7A7D9C] pt-[10px] text-[14px] leading-[26px] font-normal tracking-[-0.4%] max-w-[570px]">When should you begin to care for your mother? The answer is simple: start now, while you're still young. </p>
+                            <p className="text-[#7A7D9C] pt-[10px] text-[14px] leading-[26px] font-normal tracking-[-0.4%] max-w-[570px]">When should you begin to care for your mother? The answer is simple: start now, while you&apos;re still young. </p>
                             <Link href="/">
                                 <div className="pt-10 flex flex-col items-end justify-end">
                                     <h2 className="text-[#5B52B6] underline text-[17px] leading-[24px] font-semibold">Read more</h2>
@@ -69,7 +69,7 @@ const insights = () => {
                         <div className="border-[1px] lg:h-[286px] p-[20px] rounded-[16px] border-[#EFF0F6] max-w-[610px]">
                             <h2 className="text-[#5B52B6] text-[17px] leading-[24px] font-semibold">Featured Trends</h2>
                             <h1 className="text-[25px] text-[#101828] pt-[15px] font-bold leading-[37.5px] max-w-[570px]">Consultia&apos;s 2024 Mid-Year Trends Report for All Consultants</h1>
-                            <p className="text-[#7A7D9C] text-[14px] pt-[10px] leading-[26px] font-normal tracking-[-0.4%] max-w-[570px]">When should you begin to care for your mother? The answer is simple: start now, while you're still young.</p>
+                            <p className="text-[#7A7D9C] text-[14px] pt-[10px] leading-[26px] font-normal tracking-[-0.4%] max-w-[570px]">When should you begin to care for your mother? The answer is simple: start now, while you&apos;re still young.</p>
                             <Link href="/">
                                 <div className="pt-10 flex flex-col items-end justify-end">
                                     <h2 className="text-[#5B52B6] underline text-[17px] leading-[24px] font-semibold">Read more</h2>

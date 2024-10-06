@@ -21,7 +21,7 @@ const getintouch = () => {
             <div className="lg:pt-20 pt-16">
                 <div className="grid lg:grid-cols-2 grid-cols-1 max-w-[970.91px] mx-auto gap-20">
                     <div>
-                        <h1 className="text-[#101828] mx-auto lg:mx-0 lg:text-[56px] text-[39px] text-center lg:text-left lg:leading-[70px] leading-[40px] max-w-[585.45px] font-bold">Get in touch with us. We're here to assist you.</h1>
+                        <h1 className="text-[#101828] mx-auto lg:mx-0 lg:text-[56px] text-[39px] text-center lg:text-left lg:leading-[70px] leading-[40px] max-w-[585.45px] font-bold">Get in touch with us. We&apos;re here to assist you.</h1>
                         <p className="text-[#4D5761] text-[16.5px] lg:text-left text-center leading-[27px] font-normal pt-[12px]">We&apos;d love to hear from you. Please fill out this form.</p>
 
                         {/* <GetInTouchForm /> */}

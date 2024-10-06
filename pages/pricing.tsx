@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 
 
-const pricing = () => {
+const Pricing = () => {
 
     // Create an array to manage the open state of multiple accordions
     const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -356,4 +356,4 @@ const pricing = () => {
 }
 
 
-export default pricing;
+export default Pricing;

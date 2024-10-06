@@ -89,7 +89,7 @@ const career = () => {
                 <div className="pt-20 ">
                     <div className="bg-[#F0F0F9] relative max-w-[1140px] mx-auto lg:pl-10 rounded-[8px] lg:flex lg:flex-row flex flex-col lg:items-center items-center lg:justify-center justify-center">
                         <div>
-                            <h1 className="text-[#5B52B6] text-[29px] leading-[37.7px] lg:text-[49px] lg:leading-[63.7px] font-bold max-w-[301.23px] pt-20 lg:pt-0 lg:max-w-[509px]">Join a Team that's Redefining Workflow experience for millions of people in Africa.</h1>
+                            <h1 className="text-[#5B52B6] text-[29px] leading-[37.7px] lg:text-[49px] lg:leading-[63.7px] font-bold max-w-[301.23px] pt-20 lg:pt-0 lg:max-w-[509px]">Join a Team that&apos;s Redefining Workflow experience for millions of people in Africa.</h1>
 
                             <p className="lg:pt-10 pt-[20px] text-[14px] leading-[21px] font-extrabold text-[#5B52B6]">Courtney Henry <span className="font-normal">- Founder & Group CEO</span></p>
                         </div>

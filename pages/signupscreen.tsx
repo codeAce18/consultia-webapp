@@ -392,7 +392,7 @@ const SignupScreen = () => {
                 Sign up as a client
               </h1>
               <p className="text-[#747778] text-[16px] leading-[20px] font-normal pb-2">
-                Let's get to know more about you as a client.
+                Let&apos;s get to know more about you as a client.
               </p>
 
               {/* Form */}

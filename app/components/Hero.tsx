@@ -19,7 +19,7 @@ const Hero = () => {
                 <div className="flex flex-col items-center  lg:absolute lg:inset-0 lg:bg-hero-right lg:bg-right lg:bg-no-repeat  lg:pt-20 pt-10">
                     <h1 className="lg:text-[61px] text-[45px] lg:leading-[73.2px] leading-[60px] font-extrabold text-[#101828] text-center max-w-[1188px] mx-auto">Streamline Workflows. Connect with Consultants Effortlessly.</h1>
 
-                    <p className="pt-[10px] text-[14px] font-normal leading-[21px] text-center text-[#41404B] lg:max-w-[1092px] max-w-[345px] mx-auto">Streamline client management processes by 70% with Consultia's fit-for-purpose consulting platform.<br /> Automate workflows for onboarding, requisition, compliance and invoicing—all in one place.<br /> Connecting clients with vetted consultants simlessly.</p>
+                    <p className="pt-[10px] text-[14px] font-normal leading-[21px] text-center text-[#41404B] lg:max-w-[1092px] max-w-[345px] mx-auto">Streamline client management processes by 70% with Consultia&apos;s fit-for-purpose consulting platform.<br /> Automate workflows for onboarding, requisition, compliance and invoicing—all in one place.<br /> Connecting clients with vetted consultants simlessly.</p>
 
                     <div className="pt-10 flex items-center justify-center lg:gap-10 gap-6">
                         <div>
