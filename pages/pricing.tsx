@@ -64,7 +64,7 @@ const pricing = () => {
 
                 <div className="lg:-mt-20">
                   
-                        <div className="lg:flex lg:flex-row flex flex-col items-center justify-center gap-16">
+                        <div className="lg:flex lg:flex-row flex flex-col items-center justify-center gap-[60px]">
 
                             <div className="max-w-[374px] border-[1px] border-[#BEC3CE] p-[24px] rounded-[20px]">
                                 <h2 className="text-[#101828] text-[24px] leading-[29.05px] font-semibold">Essential Plan</h2>
