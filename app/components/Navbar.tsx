@@ -1,11 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import consultiaLogo from "../../public/assets/consultiaLogo.svg";
 import arrowDown from "../../public/assets/arrowDown.svg";
-import arrowDowns from "../../public/assets/arrowDowns.svg";
+// import arrowDowns from "../../public/assets/arrowDowns.svg";
 import Menu from "../../public/assets/Menu.svg";
 import Close from "../../public/assets/x-lg.svg";
 import Carrers from "../../public/assets/Careers.svg"
@@ -39,6 +39,14 @@ export function Navbar() {
     // Close Company dropdown when Support dropdown is opened
     if (!isSupportDropdownOpen) setIsCompanyDropdownOpen(false);
   };
+
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+    } else {
+      document.body.style.overflow = 'auto';   // Enable scrolling when menu is closed
+    }
+  }, [isMobileMenuOpen]);
   
   
   return (
@@ -140,61 +148,66 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-16 left-0 w-full z-10 bg-white h-full shadow-md transform ${
-          isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300 ease-in-out md:hidden`}
+        className={`fixed top-[75px] left-1/2 transform -translate-x-1/2 w-[348px] z-10 bg-white h-full shadow-md transition-transform duration-300 ease-in-out md:hidden ${
+          isMobileMenuOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"
+        }`}
+        
       >
-        <div className="bg-[#3A3285] p-4 text-white h-full">
-          <div className="flex flex-col space-y-4">
-            <Link href="/">Features</Link>
+        <div className="bg-white rounded-[20px] p-4 text-[#101828] h-full flex justify-center items-center">
+          <div className="flex flex-col items-center space-y-6">
+            <Link href="/features">Features</Link>
 
             <button onClick={toggleCompanyDropdown} className="flex justify-between items-center mt-4">
               <span>Company</span>
               <Image 
-                src={arrowDowns} 
+                src={arrowDown} 
                 alt="Dropdown Arrow" 
-                className={`ml-1 transition-transform duration-300 ${isCompanyDropdownOpen ? 'rotate-180' : ''}`} 
+                className={`ml-1 transition-transform duration-300 ${
+                  isCompanyDropdownOpen ? 'rotate-180' : ''
+                }`}
               />
             </button>
+            
             {isCompanyDropdownOpen && (
               <div className="pl-4">
-                <div className="flex items-center gap-[10px] pb-2   text-[14px] font-normal leading-[21px]">
-                  <Image  src={AboutUs} alt="AboutUs"/>
-                  <Link href="/">About Us</Link>
+                <div className="flex items-center gap-[10px] pb-2 text-[14px] font-normal leading-[21px]">
+                  <Image src={AboutUs} alt="AboutUs"/>
+                  <Link href="/aboutus">About Us</Link>
                 </div>
-                <div className="flex items-center gap-[10px] pb-2 pt-2  text-[14px] font-normal leading-[21px]">
+                <div className="flex items-center gap-[10px] pb-2 pt-2 text-[14px] font-normal leading-[21px]">
                   <Image src={Carrers} alt="Carrers" />
-                  <Link href="/">Careers</Link>
+                  <Link href="/careers">Careers</Link>
                 </div>
                 <div className="flex items-center gap-[10px] pt-2 text-[14px] font-normal leading-[21px]">
                   <Image src={getInTouch} alt="getInTouch" />
-                  <Link href="/">Get in Touch</Link>
+                  <Link href="/getintouch">Get in Touch</Link>
                 </div>
               </div>
             )}
 
-            <Link href="/" className="mt-4">Pricing</Link>
+            <Link href="/pricing" className="mt-4">Pricing</Link>
 
             <button onClick={toggleSupportDropdown} className="flex justify-between items-center mt-4">
               Support
               <Image 
-                src={arrowDowns} 
+                src={arrowDown} 
                 alt="Dropdown Arrow" 
-                className={`ml-1 transition-transform duration-300 ${isSupportDropdownOpen ? 'rotate-180' : ''}`}
+                className={`ml-1 transition-transform duration-300 ${
+                  isSupportDropdownOpen ? 'rotate-180' : ''
+                }`}
               />
             </button>
+
             {isSupportDropdownOpen && (
               <div className="pl-4">
-                <div className="flex items-center gap-[10px] pb-2  text-[14px] font-normal leading-[21px]">
+                <div className="flex items-center gap-[10px] pb-2 text-[14px] font-normal leading-[21px]">
                   <Image src={FAQ} alt="FAQ" />
                   <Link href="/faq">FAQ</Link>
                 </div>
-                
-                <div className="flex items-center gap-[10px] pb-2  pt-2  text-[14px] font-normal leading-[21px]">
-                  <Image src={Knowledgeable} alt="" />
+                <div className="flex items-center gap-[10px] pb-2 pt-2 text-[14px] font-normal leading-[21px]">
+                  <Image src={Knowledgeable} alt="Knowledgebase" />
                   <Link href="/">Knowledgebase</Link>
                 </div>
-
                 <div className="flex items-center gap-[10px] pt-2 text-[14px] font-normal leading-[21px]">
                   <Image src={Insights} alt="Insights" />
                   <Link href="/insights">Insights</Link>
@@ -203,12 +216,14 @@ export function Navbar() {
             )}
 
             <Link href="/" className="mt-4">Blog</Link>
+
             <div className="mt-4">
-              <div>
+              <div className="flex flex-col items-center justify-center">
                 <Link href="/loginform">Login</Link>
               </div>
-              <button className="bg-white  text-[#101828] font-semibold px-4 py-2 rounded mt-4"><Link href="/signupscreen">
-              </Link>Sign up For Free</button>
+              <button className="bg-[#5B52B6] text-white font-semibold px-4 py-2 rounded mt-4">
+                <Link href="/signupscreen">Sign up For Free</Link>
+              </button>
             </div>
           </div>
         </div>

@@ -7,7 +7,7 @@ import CallSvg from "../public/assets/CallSvg.svg"
 import whatsappSvg from "../public/assets/whatsappSvg.svg"
 import { JoinOurMission } from "@/app/components/JoinOurMission";
 import { Footer } from "@/app/components/Footer";
-// import GetInTouchForm from "@/app/components/GetInTouchForm";
+import GetInTouchForm from "@/app/components/GetInTouchForm";
 
 
 
@@ -19,12 +19,16 @@ const getintouch = () => {
             <Navbar />
 
             <div className="lg:pt-20 pt-16">
-                <div className="grid lg:grid-cols-2 grid-cols-1 max-w-[970.91px] mx-auto gap-20">
+                <div className="grid lg:grid-cols-2 grid-cols-1 max-w-[970.91px] mx-auto lg:gap-72 gap-20">
                     <div>
-                        <h1 className="text-[#101828] mx-auto lg:mx-0 lg:text-[56px] text-[39px] text-center lg:text-left lg:leading-[70px] leading-[40px] max-w-[585.45px] font-bold">Get in touch with us. We&apos;re here to assist you.</h1>
-                        <p className="text-[#4D5761] text-[16.5px] lg:text-left text-center leading-[27px] font-normal pt-[12px]">We&apos;d love to hear from you. Please fill out this form.</p>
+                        <h1 className="text-[#101828]   lg:text-[56px] text-[39px]  p-[20px] text-left lg:leading-[70px] leading-[40px] max-w-[585.45px] font-bold">Get in touch with us. We&apos;re here to assist you.</h1>
+                        <p className="text-[#4D5761] text-[16.5px] text-left leading-[27px] font-normal pt-[12px] p-[20px] max-w-[361px] ">We&apos;d love to hear from you. Please fill out this form.</p>
 
-                        {/* <GetInTouchForm /> */}
+                        <div className="pt-20">
+
+                            <GetInTouchForm />
+
+                        </div>
                     </div>
 
 

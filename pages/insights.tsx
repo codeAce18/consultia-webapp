@@ -11,6 +11,7 @@ import BlogsFeaturedImage4 from "../public/assets/BlogsFeaturedImage4.svg"
 import Link from "next/link";
 import { JoinOurMission } from "@/app/components/JoinOurMission";
 import { Footer } from "@/app/components/Footer";
+import SubscriptionForm  from "@/app/components/SubscriptionForm";
 
 
 const insights = () => {
@@ -80,7 +81,7 @@ const insights = () => {
                     </div>
                 </div>
 
-                <div className="pt-40">
+                <div className="lg:pt-40 pt-60">
                            
                    <div className="lg:bg-[#F0F0F9] lg:flex lg:flex-row flex flex-col items-center h-[446px] justify-center">
                         <div className="p-[20px]">
@@ -90,16 +91,16 @@ const insights = () => {
                         </div>
 
                         <div>
-                            <Image width={540} height={673} src={Email} alt="Email" />
+                            <SubscriptionForm />
                         </div>
 
                     </div>
                 </div>
 
 
-                <div className="pt-32">
+                <div className="lg:pt-32 pt-72">
                     <div>
-                        <h1 className="pl-16 text-[#101828] text-[31px] leading-[46.5px] font-bold">Reports</h1>
+                        <h1 className="lg:pl-16 pl-8 text-[#101828] text-[31px] leading-[46.5px] font-bold">Reports</h1>
 
                         <div className="pt-[20px] lg:flex lg:flex-row flex flex-col items-center justify-center gap-[10px]">
                             <div className="lg:w-[409px] overflow-hidden w-[361px] rounded-[16px] border-[1px] border-[#EFF0F6] p-[20px]">
