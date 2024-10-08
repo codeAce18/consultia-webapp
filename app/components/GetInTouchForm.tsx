@@ -22,7 +22,7 @@ const GetInTouchForm: React.FC = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-10">
       {/* Name Field */}
-      <div className="lg:flex lg:items-center lg:justify-start flex items-center justify-center gap-6 lg:gap-10">
+      <div className="lg:flex lg:flex-row lg:items-center lg:justify-start flex flex-col items-center justify-center gap-6 lg:gap-10">
         <div>
           <label htmlFor="name">Name</label>
           <Input

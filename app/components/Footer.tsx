@@ -136,7 +136,7 @@ export function Footer() {
 
                 <div className='lg:pt-[10px] pt-[20px] lg:flex lg:flex-row flex flex-col  items-center justify-center lg:justify-normal gap-10'>
                     <Link href="/">
-                        <p className='max-w-[113px] text-[14px] text-[#667185] leading-[20.3px] font-medium'>Terms of Service</p>
+                        <p className='max-w-[113px] text-[14px] text-[#667185] leading-[20.3px] font-medium whitespace-nowrap'>Terms of Service</p>
                     </Link>
 
                     <Link href="/">
