@@ -2,8 +2,9 @@ import { Navbar } from "@/app/components/Navbar";
 import "../app/globals.css";
 import Image from 'next/image';
 
-import blueBg from "../public/assets/blueBg.png"
+// import blueBg from "../public/assets/blueBg.png"
 import TeamImg from "../public/assets/TeamImg.png"
+import AboutUsCEO from "../public/assets/AboutUsCEO.svg"
 import tickCircle from "../public/assets/tick-circle.svg"
 import { JoinOurMission } from "@/app/components/JoinOurMission";
 import { Footer } from "@/app/components/Footer";
@@ -20,34 +21,54 @@ const aboutus = () => {
             <p className="pt-[15px] text-[14px] leading-[21px] font-normal max-w-[349px] lg:max-w-[501px] text-[#101828]">At Consultia, our mission is to empower consultants and firms across Africa 
             with the tools they need to succeed. </p>
           </div>
+          <div className="pt-10 p-[20px]">
+            <div className="flex items-center justify-center">
+              <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
+                
+                {/* Text Section (Normal on lg screens, reversed on small screens) */}
+                <div className="flex flex-col justify-center mx-auto text-center lg:text-left order-last lg:order-first">
+                  <h1 className="text-[#101828] text-[49px] leading-[73.5px] font-bold">Our Story</h1>
+                  <p className="text-[14px] leading-[21px] font-normal max-w-[361px] lg:max-w-[562px] text-[#41404B]">
+                    Consultia was born out of the challenges faced by consultants in managing their daily operations. With years of experience in the consultancy industry, we identified the need for a comprehensive solution that could address these challenges head-on. Today, Consultia is on a mission to transform how consultancy firms operate, enabling them to focus on what truly matters—serving their clients and growing their businesses.
+                  </p>
+                </div>
 
-          <div className="pt-20 p-[20px]">
-            <div className="lg:flex lg:flex-row flex flex-col-reverse   lg:items-center lg:justify-center lg:gap-[125px]">
-              <div className="flex flex-col justify-center mx-auto text-center lg:text-left">
-                <h1 className="text-[#101828] text-[49px] leading-[73.5px] font-bold">Our Story</h1>
+                {/* Image Section */}
+                <div className="order-first lg:order-last">
+                  <Image className="mx-auto" width={505} height={463} src={AboutUsCEO} alt="AboutUsCEO" />
+                </div>
 
-                <p className="text-[14px] leading-[21px] font-normal max-w-[361px] lg:max-w-[562px] text-[#41404B]">Consultia was born out of the challenges faced by consultants in managing their daily operations. With years of experience in the consultancy industry, we identified the need for a comprehensive solution that could address these challenges head-on. Today, Consultia is on a mission to transform how consultancy firms operate, enabling them to focus on what truly matters—serving their clients and growing their businesses.</p>
-              </div>
-
-              <div>
-                <Image className="mx-auto" width={505} height={463} src={blueBg} alt="blueBg" />
               </div>
             </div>
           </div>
 
 
           <div className="lg:pt-20 pt-10 p-[20px]">
-            <div className="lg:flex lg:flex-row flex flex-col items-center justify-center lg:gap-[125px]">
-              <div>
-                <Image width={505} height={463} src={TeamImg} alt="TeamImg" />
-              </div>
-             
-              <div className="flex flex-col justify-center mx-auto lg:text-left text-center">
-                <h1 className="text-[#101828] text-[49px] leading-[73.5px] font-bold">Our Team</h1>
+           
+            <div className="flex items-center justify-center">
+              <div className="grid lg:grid-cols-2 grid-cols-1">
+                {/* Image Section */}
+                <div className="flex-shrink-0">
+                  <Image
+                    width={505}
+                    height={463}
+                    src={TeamImg}
+                    alt="Team Image"
+                    className="max-w-full h-auto" // Ensure image scales properly on different screen sizes
+                  />
+                </div>
 
-                <p className="text-[14px] leading-[21px] font-normal max-w-[610px] text-[#41404B]">Our team comprises seasoned professionals with deep expertise in consultancy, technology, and business management. We are passionate about creating solutions that not only meet but exceed the needs of our users.</p>
-              </div>
+                {/* Text Section */}
+                <div className="pt-[30px] lg:pt-0 flex flex-col justify-center mx-auto lg:text-left text-center max-w-full">
+                  <h1 className="text-[#101828] text-[32px] lg:text-[49px] leading-[40px] lg:leading-[73.5px] font-bold">
+                    Our Team
+                  </h1>
 
+                  <p className="pt-[15px] lg:pt-0 text-[14px] lg:text-[16px] leading-[21px] lg:leading-[24px] font-normal max-w-[90%] lg:max-w-[610px] text-[#41404B] mx-auto lg:mx-0">
+                    Our team comprises seasoned professionals with deep expertise in consultancy, technology, and business management. We are passionate about creating solutions that not only meet but exceed the needs of our users.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 

@@ -41,25 +41,26 @@ const Pricing = () => {
                 </div>
 
                 <div className="flex items-center justify-center py-8 space-x-4">
-                    <span className={`text-lg font-semibold ${!isAnnual ? 'text-[#5B52B6]' : 'text-gray-600'}`}>
+                <span className={`text-[16px] leading-[24px] font-semibold ${!isAnnual ? 'text-[#5B52B6]' : 'text-gray-600'}`}>
                     Billed Monthly
-                    </span>
+                </span>
+                <div
+                     onClick={togglePlan}
+                     className="relative w-[60px] h-[34px] rounded-full cursor-pointer transition-colors duration-300"
+                     style={{
+                         backgroundColor: isAnnual ? '#5B52B6' : 'rgb(209, 213, 219)',  // Tailwind's gray-300
+                    }}
+                >
                     <div
-                    onClick={togglePlan}
-                    className={`relative w-[60px] h-[34px] bg-gray-300 rounded-full cursor-pointer transition-colors duration-300 ${
-                        isAnnual ? 'bg-[#5B52B6]' : 'bg-gray-300'
+                    className={`absolute top-0.5 left-1 w-[30px] h-[30px] bg-white rounded-full shadow-md transform transition-transform duration-300 ${
+                        isAnnual ? 'translate-x-[26px] bg-[#5B52B6]' : ''
                     }`}
-                    >
-                    <div
-                        className={`absolute top-1 left-1 w-[30px] h-[30px] bg-white rounded-full shadow-md transform transition-transform duration-300 ${
-                        isAnnual ? 'translate-x-[26px]' : ''
-                        }`}
                     ></div>
-                    </div>
-                    <span className={`text-lg font-semibold ${isAnnual ? 'text-[#5B52B6]' : 'text-gray-600'}`}>
-                    Billed Yearly<br />
-                    (save 20%)
-                    </span>
+                </div>
+                <span className={`text-[16px] leading-[24px] font-semibold ${isAnnual ? 'text-[#5B52B6]' : 'text-gray-600'}`}>
+                    Billed Yearly
+                     <span className="text-[16px] leading-[22.4px] font-normal">(save 20%)</span>
+                </span>
                 </div>
 
                 <div className="lg:-mt-20">

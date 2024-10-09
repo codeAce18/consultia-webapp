@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 import ClientIcon from "../../public/assets/ClientIcon.svg"
 import ClientImage from "../../public/assets/ClientImage.svg"
+import ConsultantImage from "../../public/assets/ConsultantImage.png"
 // import ConsultantIcon from "../../public/assets/ConsultantIcon.svg"
 import Image from "next/image";
 
@@ -40,7 +41,7 @@ export function OrientedPeople() {
                             activeClient === 1 ? 'text-[#5B52B6]' : 'text-gray-500'
                         }`}
                         >
-                        Clients 1
+                        Clients
                         </h1>
                     </div>
 
@@ -57,7 +58,7 @@ export function OrientedPeople() {
                             activeClient === 2 ? 'text-[#5B52B6]' : 'text-gray-500'
                         }`}
                         >
-                        Clients 2
+                        Consultants
                         </h1>
                     </div>
                     </div>
@@ -68,17 +69,17 @@ export function OrientedPeople() {
                     {/* First client content (visible when activeClient is 1) */}
                     {activeClient === 1 && (
                     <>
-                        <div className="max-w-[300px] lg:max-w-none">
-                        <Image src={ClientImage} alt="ClientImage 1" />
+                        <div className="max-w-[300px] lg:max-w-none ">
+                            <Image src={ClientImage} alt="ClientImage 1" className="rounded-[8px]" />
                         </div>
                         <div className="text-center lg:text-left">
                         <h1 className="text-[20px] lg:text-[25px] leading-[30px] lg:leading-[37.5px] font-bold max-w-[305px] lg:max-w-[505px] text-[#101828]">
                             Your go-to platform for finding the right consulting service providers, regardless of your industry in Africa.
                         </h1>
-                        <p className="text-[#101828] text-[14.5px] lg:text-[16.5px] leading-[21.1px] lg:leading-[23.1px] max-w-[305px] lg:max-w-[505px]">
+                        <p className="pt-[35px] text-[#101828] text-[14px] lg:text-[16px] leading-[21.1px] lg:leading-[23.1px] max-w-[305px] lg:max-w-[505px]">
                             Easily find vetted consultants and leverage Consultia&apos;s tools to submit job requisitions from your personalized dashboard. Monitor the progress of your project on the go and never miss any compliance requirements for your business or your clients.
                         </p>
-                        <h2 className="text-[#5B52B6] underline text-[15px] lg:text-[17px] leading-[22px] lg:leading-[24px] font-semibold cursor-pointer">
+                        <h2 className="pt-[15px] text-[#5B52B6] underline text-[15px] lg:text-[17px] leading-[22px] lg:leading-[24px] font-semibold cursor-pointer">
                             Read more
                         </h2>
                         </div>
@@ -89,16 +90,16 @@ export function OrientedPeople() {
                     {activeClient === 2 && (
                     <>
                         <div className=" max-w-[300px] lg:max-w-none">
-                        <Image src={ClientImage} alt="ClientImage 2" />
+                        <Image src={ConsultantImage} alt="ConsultantImage" className="rounded-[8px]" />
                         </div>
                         <div className="text-center lg:text-left">
                         <h1 className="text-[20px] lg:text-[25px] leading-[30px] lg:leading-[37.5px] font-bold max-w-[305px] lg:max-w-[505px] text-[#101828]">
-                            Discover leading experts for your business needs across various industries.
+                            Consultia is your trusted platform when you need well paying consulting projects. 
                         </h1>
-                        <p className="text-[#101828] text-[14.5px] lg:text-[16.5px] leading-[21.1px] lg:leading-[23.1px] max-w-[305px] lg:max-w-[505px]">
-                            Consultia makes it easy to engage with highly qualified consultants and track progress, ensuring your business operates seamlessly.
+                        <p className="pt-[35px] text-[#101828] text-[14px] lg:text-[16px] leading-[21.1px] lg:leading-[23.1px] max-w-[305px] lg:max-w-[505px]">
+                            Streamline your workflow and expand your consulting reach. Tap into the growing pool of ready clients from all over the world, effortlessly.
                         </p>
-                        <h2 className="text-[#5B52B6] underline text-[15px] lg:text-[17px] leading-[22px] lg:leading-[24px] font-semibold cursor-pointer">
+                        <h2 className="pt-[15px] text-[#5B52B6] underline text-[15px] lg:text-[17px] leading-[22px] lg:leading-[24px] font-semibold cursor-pointer">
                             Read more
                         </h2>
                         </div>

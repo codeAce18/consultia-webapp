@@ -20,7 +20,7 @@ const GetInTouchForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-10">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
       {/* Name Field */}
       <div className="lg:flex lg:flex-row lg:items-center lg:justify-start flex flex-col items-center justify-center gap-6 lg:gap-10">
         <div>
@@ -29,7 +29,7 @@ const GetInTouchForm: React.FC = () => {
             id="name"
             type="text"
             {...register('name', { required: 'Name is required' })}
-            className="mt-1 block lg:w-[268px] w-[172.76px]"
+            className="mt-1 block lg:w-[268px] w-[300px]"
             placeholder="Full name"
           />
           {errors.name && <span className="text-red-600">{errors.name.message}</span>}
@@ -42,7 +42,7 @@ const GetInTouchForm: React.FC = () => {
             id="companyName"
             type="text"
             {...register('companyName', { required: 'Company name is required' })}
-            className="mt-1 block lg:w-[268px] w-[172.76px]"
+            className="mt-1 block lg:w-[268px] w-[300px]"
             placeholder="Enter company name"
           />
           {errors.companyName && <span className="text-red-600">{errors.companyName.message}</span>}
@@ -50,14 +50,14 @@ const GetInTouchForm: React.FC = () => {
       </div>
 
       {/* Email Field */}
-      <div className="lg:flex lg:items-center lg:justify-start flex items-center justify-center gap-6 lg:gap-10">
+      <div className="lg:flex lg:flex-row lg:items-center lg:justify-start flex flex-col items-center justify-center gap-6 lg:gap-10">
         <div>
           <label htmlFor="email">Email</label>
           <Input
             id="email"
             type="email"
             {...register('email', { required: 'Email is required', pattern: /^\S+@\S+$/i })}
-            className="mt-1 block lg:w-[268px] w-[172.76px]"
+            className="mt-1 block lg:w-[268px] w-[300px]"
             placeholder="your@company.com"
           />
           {errors.email && <span className="text-red-600">{errors.email.message}</span>}
@@ -70,7 +70,7 @@ const GetInTouchForm: React.FC = () => {
             id="phoneNumber"
             type="tel"
             {...register('phoneNumber', { required: 'Phone number is required' })}
-            className="mt-1 block lg:w-[268px] w-[172.76px]"
+            className="mt-1 block lg:w-[268px] w-[300px]"
             placeholder="+1 (248) 000-0000"
           />
           {errors.phoneNumber && <span className="text-red-600">{errors.phoneNumber.message}</span>}
@@ -85,13 +85,13 @@ const GetInTouchForm: React.FC = () => {
           <Textarea
             id="message"
             {...register('message', { required: 'Message is required' })}
-            className="mt-1 block lg:w-[560px] w-[361px]"
+            className="mt-1 block lg:w-[575px]  w-[300px] "
             placeholder="Message..."
           />
           {errors.message && <span className="text-red-600">{errors.message.message}</span>}
         </div>
 
-        <button type="submit" className="bg-[#5B52B6] lg:w-[560px] w-[361px]  text-[15.13px] font-semibold leading-[24px] text-white py-2 px-4 rounded mt-4">
+        <button type="submit" className="bg-[#5B52B6] lg:w-[575px]  w-[300px]  text-[15.13px] font-semibold leading-[24px] text-white py-2 px-4 rounded mt-4">
           Submit
         </button>
       </div>
