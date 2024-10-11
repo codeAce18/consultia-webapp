@@ -8,6 +8,32 @@ body {
   padding: 0;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.chat-box {
+  transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.chat-text {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* When the text is hidden, reduce the width and hide the text */
+.chat-box.hidden {
+  width: 50px; /* Or adjust based on the size of your chat image */
+  padding: 12px 8px; /* Make the padding smaller */
+}
+
+.chat-box.hidden .chat-text {
+  opacity: 0; /* Hide the text */
+}
 
 /* Hide scrollbar */
 .scrollbar-hide::-webkit-scrollbar {
@@ -34,3 +60,45 @@ body {
   animation: scroll 20s linear infinite;
 }
   
+
+.custom-list {
+  list-style-type: disc;
+  padding-left: 20px; /* Optional for indentation */
+}
+
+.Chat {
+  position: absolute;
+  top: 689px;
+  left: 1167px;
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+  /* Styles for 22-inch screens */
+  .Chat {
+    position: absolute;
+    top: 689px;
+    left: 1467px;
+  }
+}
+
+@media  (min-width: 345px) and (max-width: 779px)  {
+  .Chat {
+    top: 837px;
+    left: 257px;
+ 
+  }
+}
+
+@media  (min-width: 789px) and (max-width: 1240px)  {
+  .Chat {
+    top: 789px;
+    left: 167px;
+ 
+  }
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+  .text {
+    padding-left: 350px;
+  }
+}

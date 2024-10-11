@@ -83,7 +83,7 @@ const insights = () => {
 
                 <div className="lg:pt-40 pt-60">
                            
-                   <div className="lg:bg-[#F0F0F9] lg:flex lg:flex-row flex flex-col items-center h-[446px] justify-center">
+                   <div className="lg:bg-[#F0F0F9] lg:flex lg:flex-row lg:gap-20 flex flex-col items-center h-[446px] justify-center">
                         <div className="p-[20px]">
                             <div className="py-[20px] px-[20px] lg:px-0 lg:py-0 flex flex-col items-left justify-start pl-10 lg:pl-0 bg-[#F0F0F9]  lg:bg-none">
                                 <h1 className="text-[#000000] lg:text-[49px] text-[39px] leading-[46.8px] lg:leading-[68.6px] max-w-[557px] font-bold">Subscribe to our insights to stay ahead of the curve.</h1>
@@ -100,7 +100,7 @@ const insights = () => {
 
                 <div className="lg:pt-32 pt-72">
                     <div>
-                        <h1 className="lg:pl-16 pl-8 text-[#101828] text-[31px] leading-[46.5px] font-bold">Reports</h1>
+                        <h1 className="lg:pl-16 pl-8 text-[#101828] text-[31px] leading-[46.5px] font-bold text">Reports</h1>
 
                         <div className="pt-[20px] lg:flex lg:flex-row flex flex-col items-center justify-center gap-[10px]">
                             <div className="lg:w-[409px] overflow-hidden w-[361px] rounded-[16px] border-[1px] border-[#EFF0F6] p-[20px]">

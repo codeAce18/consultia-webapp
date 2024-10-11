@@ -20,8 +20,8 @@ const Faq = () => {
             <Navbar />
             <div className="pt-10">
                 <h1 className="flex flex-col items-center justify-center text-center text-[#101828] text-[49px] leading-[68.6px] font-bold">Frequently Asked Questions</h1>
-                <div className="pt-[25px] lg:pt-0 flex flex-col items-left  justify-center p-[20px]">
-                    <h1 className="text-[#5B52B6] text-[25px] leading-[37.5px]  pb-[10px] lg:pb-0 font-bold">General</h1>
+                <div className="pt-[25px] lg:pt-0 flex flex-col items-start  justify-center p-[20px]">
+                    <h1 className="text-[#5B52B6] text text-[25px] leading-[37.5px]  pb-[10px] lg:pb-0 font-bold">General</h1>
 
                     {/* First Accordion */}
                     <div className="w-full max-w-[1049px] mx-auto border border-[#E4E3EB] rounded-lg overflow-hidden mb-2">
@@ -79,7 +79,7 @@ const Faq = () => {
                 </div>
 
                 <div className="flex flex-col items-left justify-center p-[20px]">
-                    <h1 className="text-[#5B52B6] text-[25px] leading-[37.5px] font-bold pt-[10px] lg:pt-0 pb-[10px] lg:pb-0 lg:max-w-[165px]">Consulting Agency</h1>
+                    <h1 className="text-[#5B52B6] text-[25px] leading-[37.5px] font-bold pt-[10px] lg:pt-0 pb-[10px] lg:pb-0 lg:max-w-[165px] text ">Consulting Agency</h1>
                     
                     <div className="w-full max-w-[1049px] mx-auto border border-[#E4E3EB] rounded-lg overflow-hidden mb-2">
                         <div 

@@ -2,7 +2,9 @@ import Image from "next/image";
 
 import testimonialImage from "../../public/assets/testimonialImg.svg"
 
+
 export function Testimonial() {
+  
     return(
         <div className="pt-20">
         <div className="flex flex-col items-center justify-center">
@@ -12,7 +14,7 @@ export function Testimonial() {
         </div>
       
         {/* Scrolling Testimonials */}
-        <div className="pt-10 overflow-hidden">
+        <div className="pt-10 overflow-hidden max-w-[1240px] mx-auto">
           {/* Wrapper that will scroll */}
           <div className="flex gap-10 items-center justify-start animate-scroll">
             {/* Testimonial 1 */}

@@ -12,21 +12,20 @@ export function WhyConsultia() {
                 <h1 className="text-[49px] leading-[73.5px] font-bold text-[#101828]">Why Choose Consultia?</h1>
             </div>
 
-            <div className="pt-6 grid lg:grid-cols-2 grid-cols-1 p-[20px] lg:p-0 max-w-[1240px] gap-8 mx-auto">
-                <div>
-                    <Image className="mx-auto" width={610} height={405} src={chooseCard1} alt="chooseCard1" />
-                </div>
-
-                <div>
-                    <Image className="mx-auto" width={610} height={405} src={chooseCard2} alt="chooseCard2" />
-                </div>
-
-                <div>
-                    <Image className="mx-auto" width={610} height={405} src={chooseCard3} alt="chooseCard3" />
-                </div>
-
-                <div>
-                    <Image className="mx-auto" width={610} height={405} src={chooseCard4} alt="chooseCard4" />
+            <div className="pt-10">
+                <div className=" grid lg:grid-cols-2 grid-cols-1 p-[20px] lg:p-0 max-w-[1240px] gap-8 mx-auto">
+                    <div>
+                        <Image className="mx-auto" width={610} height={405} src={chooseCard1} alt="chooseCard1" />
+                    </div>
+                    <div>
+                        <Image className="mx-auto" width={610} height={405} src={chooseCard2} alt="chooseCard2" />
+                    </div>
+                    <div>
+                        <Image className="mx-auto" width={610} height={405} src={chooseCard3} alt="chooseCard3" />
+                    </div>
+                    <div>
+                        <Image className="mx-auto" width={610} height={405} src={chooseCard4} alt="chooseCard4" />
+                    </div>
                 </div>
             </div>
         </div>

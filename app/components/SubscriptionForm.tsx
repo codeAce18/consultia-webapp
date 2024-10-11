@@ -118,7 +118,7 @@ const SubscriptionForm: React.FC = () => {
         Subscribe
       </button>
 
-      <p className="text-[#191C1D] lg:text-[16px] text-[14px] leading-[20px] lg:leading-[24px] font-normal text-center max-w-[327px]">By clicking on &apos;subscribe&apos;, Consultia may use 
+      <p className="text-[#191C1D] text-[14px] leading-[20px] lg:leading-[24px] font-normal text-center max-w-[327px]">By clicking on &apos;subscribe&apos;, Consultia may use 
         the information provided to contact you about our
         relevant content, product and services</p>
     </form>

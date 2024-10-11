@@ -14,6 +14,7 @@ import careerDevelopment from "../public/assets/careerDevelopment.svg"
 import Learning from "../public/assets/Learning.svg"
 import Growth from "../public/assets/Growth.svg"
 import More from "../public/assets/More.svg"
+import CareerImage from "../public/assets/CareerImage.png"
 import { JoinOurMission } from "@/app/components/JoinOurMission";
 import { Footer } from "@/app/components/Footer";
 
@@ -26,10 +27,13 @@ const career = () => {
 
             <Navbar />
             <div>
-                <div className="lg:hidden flex w-full bg-cover bg-center">
-                    <Image width={393} height={462} src={mobileImage} alt="mobileImage" />
+                <div className="lg:flex hidden">
+                    <Image className="w-full mx-auto" src={CareerImage} alt="CareerImage" />
                 </div>
-                <div className="pt-10 flex flex-col items-center justify-center text-center ">
+                <div className="lg:hidden flex  bg-cover bg-center">
+                    <Image className="w-full mx-auto" width={393} height={462} src={mobileImage} alt="mobileImage" />
+                </div>
+                <div className="lg:pt-20 pt-10 flex flex-col items-center justify-center text-center ">
                     
                     <h1 className="text-[#101828] text-[39px] lg:text-[61px] leading-[46.8px] lg:leading-[73.2px] font-bold max-w-[393px] lg:max-w-[1002px]">
                         Join us to make an Impact in the Consulting Industry.

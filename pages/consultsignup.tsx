@@ -51,11 +51,11 @@ const ConsultSignup = () => {
   };
 
 
-  const isFormmValid =
+  const isFormValidd =
     formValues.firstName &&
     formValues.lastName &&
     formValues.phoneNumber &&
-    formValues.referralSource &&
+   
     formValues.companyName &&
     formValues.consultancyType;
 
@@ -351,17 +351,17 @@ const ConsultSignup = () => {
                 <p>Back</p>
               </div>
             </div>
-            <div className="bg-white lg:w-[540px] w-[350px]  h-[500px]  px-[70px] rounded-[16px]">
+            <div className="bg-white pt-10 lg:w-[540px] w-[350px] h-[500px]  py-[40px] overflow-hidden  px-[70px] rounded-[16px]">
               {/* Step 5 Header */}
               <h1 className="text-[24px] leading-[32px] font-semibold text-[#191C1D]">
                 Sign up as a Consultancy firm
               </h1>
-              <p className="text-[#747778] text-[16px] leading-[20px] font-normal pb-2">
+              <p className="text-[#747778] pt-[15px] text-[16px] leading-[20px] font-normal pb-2">
                 Lets get to know more about you and your business.
               </p>
 
               {/* Form */}
-              <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 pt-[10px]">
                 {/* First Name */}
                 <div className="flex flex-col space-y-2">
              
@@ -415,15 +415,17 @@ const ConsultSignup = () => {
                 </div>
 
                 <div className="flex flex-col space-y-2">
-                    
-                    <select {...register("consultancyType", { required: "Consultancy type is required." })} className="border rounded-md p-2">
-                    <option value="" disabled>Consultancy Type</option>
-                    <option value="business">Business Consultancy</option>
-                    <option value="financial">Financial Consultancy</option>
-                    <option value="it">IT Consultancy</option>
-                    <option value="marketing">Marketing Consultancy</option>
-                    </select>
-                </div>
+                <select
+                  {...register("consultancyType", { required: "Consultancy type is required." })}
+                  className="border rounded-md p-2"
+                >
+                  <option value="" disabled selected hidden>Consultancy Type</option> {/* Placeholder */}
+                  <option value="business">Business Consultancy</option>
+                  <option value="financial">Financial Consultancy</option>
+                  <option value="it">IT Consultancy</option>
+                  <option value="marketing">Marketing Consultancy</option>
+                </select>
+              </div>
                   
 
 
@@ -435,12 +437,12 @@ const ConsultSignup = () => {
                       style={{
                         width: "100%",
                         height: "48px",
-                        backgroundColor: isFormValid ? "#5B52B6" : "#CFCDEC",
+                        backgroundColor: isFormValidd ? "#5B52B6" : "#CFCDEC",
                         color: "white",
                         fontWeight: "bold",
                         borderRadius: "8px",
                       }}
-                      disabled={!isFormmValid}
+                      disabled={!isFormValidd}
                     >
                       Go to Dashboard
                     </Button>

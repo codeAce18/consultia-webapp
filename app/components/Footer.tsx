@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from "next/link";
-
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 import consultiaLogo from "../../public/assets/consultiaLogo.svg"
 
 import callIcon from "../../public/assets/call.svg"
@@ -16,7 +17,7 @@ import Ntda from "../../public/assets/ntda.png"
 export function Footer() {
     return (
         <div className='pt-20'>
-            <div className='bg-[#F1F1F1] max-w-[1440px] mx-auto py-[50px] px-[5%]'>
+            <div className='bg-[#F1F1F1] w-full  mx-auto py-[50px] px-[5%]'>
                 <div className='flex flex-col lg:flex-row items-center justify-center lg:justify-between'>
                 <div className='text-center lg:text-left'>
                     <h1 className='text-[20px] lg:text-[28px] leading-[28.8px] text-[#101928] tracking-[-2%] font-bold'>
@@ -28,21 +29,21 @@ export function Footer() {
                 </div>
 
                 <div className='pt-[20px] lg:pt-0 flex flex-col lg:flex-row items-center lg:justify-normal justify-center lg:gap-[20px]'>
-                    <input
-                    className="max-w-[300px] mx-auto h-[48px] px-[16px] rounded-[6px] border border-[#D0D5DD] outline-none"
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Email address"
+                    <Input
+                        className="max-w-[300px] mx-auto h-[48px] px-[16px] rounded-[6px] border border-[#D0D5DD] outline-none"
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Email address"
                     />
                     <div className='pt-[15px] lg:pt-0'>
-                    <Link href="/">
-                        <button className='bg-[#5B52B6] w-[181px] h-[48px] p-[10px] rounded-[8px] text-[16px] font-bold leading-[19.2px] text-white'>
-                        Subscribe
-                        </button>
-                    </Link>
+                        <Link href="/">
+                        <Button className="bg-[#5B52B6] w-[181px] h-[48px] p-[10px] rounded-[8px] text-[16px] font-bold leading-[19.2px] text-white">
+                            Subscribe
+                        </Button>
+                        </Link>
                     </div>
-                </div>
+                    </div>
                 </div>
 
                 <div className='pt-20 flex flex-col lg:flex-row justify-center items-center lg:items-start lg:justify-between'>
@@ -61,23 +62,26 @@ export function Footer() {
                         )}
                         {section === "Company" && (
                         <>
-                            <Link href="/">
+                            <Link href="/aboutus">
                             <li>About Us</li>
                             </Link>
-                            <Link href="/">
+                            <Link href="/careers">
                             <li className='pt-[8px]'>Careers</li>
+                            </Link>
+                            <Link href="/getintouch">
+                            <li className='pt-[8px]'>Get In Touch</li>
                             </Link>
                         </>
                         )}
                         {section === "Support" && (
                         <>
-                            <Link href="/">
+                            <Link href="/faq">
                             <li>FAQ</li>
                             </Link>
                             <Link href="/">
                             <li className='pt-[8px]'>Knowledge Base</li>
                             </Link>
-                            <Link href="/">
+                            <Link href="/insights">
                             <li className='pt-[8px]'>Insights</li>
                             </Link>
                         </>
@@ -129,15 +133,15 @@ export function Footer() {
                 </div>
 
                 <div className='pt-[20px] flex flex-col lg:flex-row items-center justify-center lg:justify-normal gap-10'>
-                <Link href="/">
-                    <p className='max-w-[113px] text-[14px] lg:text-[16px] text-[#667185] leading-[20.3px] font-medium whitespace-nowrap'>Terms of Service</p>
-                </Link>
-                <Link href="/">
-                    <p className='text-[14px] lg:text-[16px] text-[#667185] leading-[20.3px] font-medium'>Privacy Policy</p>
-                </Link>
-                <Link href="/">
-                    <p className='text-[14px] lg:text-[16px] text-[#667185] leading-[20.3px] font-medium'>Security</p>
-                </Link>
+                    <Link href="/termsofservice">
+                        <p className='max-w-[113px] text-[14px] lg:text-[16px] text-[#667185] leading-[20.3px] font-medium whitespace-nowrap'>Terms of Service</p>
+                    </Link>
+                    <Link href="/privacypolicy">
+                        <p className='text-[14px] lg:text-[16px] text-[#667185] leading-[20.3px] font-medium'>Privacy Policy</p>
+                    </Link>
+                    <Link href="/">
+                        <p className='text-[14px] lg:text-[16px] text-[#667185] leading-[20.3px] font-medium'>Security</p>
+                    </Link>
                 </div>
             </div>
         </div>

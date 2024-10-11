@@ -59,7 +59,7 @@ const Pricing = () => {
                 </div>
                 <span className={`text-[16px] leading-[24px] font-semibold ${isAnnual ? 'text-[#5B52B6]' : 'text-gray-600'}`}>
                     Billed Yearly
-                     <span className="text-[16px] leading-[22.4px] font-normal">(save 20%)</span>
+                     <span className="text-[16px] leading-[22.4px] font-normal pl-[10px]">(save 20%)</span>
                 </span>
                 </div>
 
