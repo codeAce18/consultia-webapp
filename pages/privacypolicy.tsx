@@ -7,7 +7,7 @@ import Image from 'next/image';
 import Chat from "../public/assets/Chat.svg"
 
 
-const privacypolicy = () => {
+const Privacypolicy = () => {
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
@@ -185,7 +185,7 @@ const privacypolicy = () => {
 
                 <div className="max-w-[1240px] mx-auto pt-[30px]">
                     <div>
-                        <h1 className="text-[#101828] text-[25px] leading-[37.5px] font-bold">8. Children's Privacy</h1>
+                        <h1 className="text-[#101828] text-[25px] leading-[37.5px] font-bold">8. Children&apos;s Privacy</h1>
                         <p className="text-[#41404B] pt-[15px] text-[16px] leading-[24px] fontmedium">Our Service is not intended for use by individuals under the age of 18. We do not knowingly collect personal information from children. If we become aware that we have collected personal information from a child, we will take steps to delete that information.</p>
                     </div>
                 </div>
@@ -224,4 +224,4 @@ const privacypolicy = () => {
 }
 
 
-export default privacypolicy;
+export default Privacypolicy;

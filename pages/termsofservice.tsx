@@ -6,7 +6,7 @@ import { Footer } from "@/app/components/Footer";
 import Image from 'next/image';
 import Chat from "../public/assets/Chat.svg"
 
-const termsofservice = () => {
+const Termsofservice = () => {
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
@@ -196,4 +196,4 @@ const termsofservice = () => {
     )
 }
 
-export default termsofservice;
+export default Termsofservice;
