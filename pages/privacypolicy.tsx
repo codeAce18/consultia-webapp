@@ -37,7 +37,7 @@ const Privacypolicy = () => {
                     </div>
                 </div>
 
-                <div className="pt-20">
+                <div className="pt-20 px-[20px] lg:px-0">
                     <div className="max-w-[1240px] mx-auto">
                         <h1 className="text-[#101828] text-[25px] leading-[37.5px] font-bold">Welcome to Consultia!</h1>
 
@@ -45,7 +45,7 @@ const Privacypolicy = () => {
                     </div>
                 </div>
 
-                <div className="pt-[30px]">
+                <div className="pt-[30px] px-[20px] lg:px-0">
                     <div className="max-w-[1240px] mx-auto">
                         <h1 className="text-[#101828] text-[25px] leading-[37.5px] font-bold">1. Information We Collect</h1>
 
@@ -87,7 +87,7 @@ const Privacypolicy = () => {
                 </div>
 
 
-                <div className="max-w-[1240px] mx-auto pt-[30px]">
+                <div className="max-w-[1240px] mx-auto pt-[30px] px-[20px] lg:px-0">
                     <div>
                         <h1 className="text-[#101828] text-[25px] leading-[37.5px] font-bold">2. How We Use Your Information</h1>
                         <p className="text-[#41404B] pt-[15px] text-[16px] leading-[24px] fontmedium">We use the information we collect for various purposes, including:</p>
@@ -112,7 +112,7 @@ const Privacypolicy = () => {
                     </ul>
                 </div>
 
-                <div className="max-w-[1240px] mx-auto pt-[30px]">
+                <div className="max-w-[1240px] mx-auto pt-[30px] px-[20px] lg:px-0">
                     <div>
                         <h1 className="text-[#101828] text-[25px] leading-[37.5px] font-bold">3. Sharing Your Information</h1>
                         <p className="text-[#41404B] pt-[15px] text-[16px] leading-[24px] fontmedium">We do not sell your personal information. However, we may share your information in the following circumstances:</p>
@@ -137,21 +137,21 @@ const Privacypolicy = () => {
                     </ul>
                 </div>
 
-                <div className="max-w-[1240px] mx-auto pt-[30px]">
+                <div className="max-w-[1240px] mx-auto pt-[30px] px-[20px] lg:px-0">
                     <div>
                         <h1 className="text-[#101828] text-[25px] leading-[37.5px] font-bold">4. Data Security</h1>
                         <p className="text-[#41404B] pt-[15px] text-[16px] leading-[24px] fontmedium">We take the security of your information seriously and implement appropriate technical and organizational measures to protect it from unauthorized access, disclosure, alteration, or destruction. However, no method of transmission over the internet or electronic storage is completely secure, and we cannot guarantee absolute security.</p>
                     </div>
                 </div>
 
-                <div className="max-w-[1240px] mx-auto pt-[30px]">
+                <div className="max-w-[1240px] mx-auto pt-[30px] px-[20px] lg:px-0">
                     <div>
                         <h1 className="text-[#101828] text-[25px] leading-[37.5px] font-bold">5. Data Retention</h1>
                         <p className="text-[#41404B] pt-[15px] text-[16px] leading-[24px] fontmedium">We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law. When your information is no longer needed, we will securely delete or anonymize it.</p>
                     </div>
                 </div>
 
-                <div className="max-w-[1240px] mx-auto pt-[30px]">
+                <div className="max-w-[1240px] mx-auto pt-[30px] px-[20px] lg:px-0">
                     <div>
                         <h1 className="text-[#101828] text-[25px] leading-[37.5px] font-bold">6. Your Rights and Choices</h1>
                         <p className="text-[#41404B] pt-[15px] text-[16px] leading-[24px] fontmedium">You have certain rights regarding your personal information, including:</p>
@@ -176,28 +176,28 @@ const Privacypolicy = () => {
                     </ul>
                 </div>
 
-                <div className="max-w-[1240px] mx-auto pt-[30px]">
+                <div className="max-w-[1240px] mx-auto pt-[30px] px-[20px] lg:px-0">
                     <div>
                         <h1 className="text-[#101828] text-[25px] leading-[37.5px] font-bold">7. International Data Transfers</h1>
                         <p className="text-[#41404B] pt-[15px] text-[16px] leading-[24px] fontmedium">Consultia is based in Nigeria, and your information may be transferred to, and processed in, countries other than your country of residence. By using the Service, you consent to the transfer of your information to Nigeria and other jurisdictions as necessary to provide the Service.</p>
                     </div>
                 </div>
 
-                <div className="max-w-[1240px] mx-auto pt-[30px]">
+                <div className="max-w-[1240px] mx-auto pt-[30px] px-[20px] lg:px-0">
                     <div>
                         <h1 className="text-[#101828] text-[25px] leading-[37.5px] font-bold">8. Children&apos;s Privacy</h1>
                         <p className="text-[#41404B] pt-[15px] text-[16px] leading-[24px] fontmedium">Our Service is not intended for use by individuals under the age of 18. We do not knowingly collect personal information from children. If we become aware that we have collected personal information from a child, we will take steps to delete that information.</p>
                     </div>
                 </div>
 
-                <div className="max-w-[1240px] mx-auto pt-[30px]">
+                <div className="max-w-[1240px] mx-auto pt-[30px] px-[20px] lg:px-0">
                     <div>
                         <h1 className="text-[#101828] text-[25px] leading-[37.5px] font-bold">9. Changes to This Privacy Policy</h1>
                         <p className="text-[#41404B] pt-[15px] text-[16px] leading-[24px] fontmedium">We may update this Privacy Policy from time to time. If we make material changes, we will notify you by posting the updated policy on our website and updating the “Last Updated” date above. Your continued use of the Service after such changes constitutes your acceptance of the updated Privacy Policy.</p>
                     </div>
                 </div>
 
-                <div className="max-w-[1240px] mx-auto pt-[30px]">
+                <div className="max-w-[1240px] mx-auto pt-[30px] px-[20px] lg:px-0">
                     <div>
                         <h1 className="text-[#101828] text-[25px] leading-[37.5px] font-bold">10. Contact Us</h1>
                         <p className="text-[#41404B] pt-[15px] text-[16px] leading-[24px] fontmedium">If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:<br /> 
