@@ -160,9 +160,11 @@ const SignupScreen = () => {
         {/* Logo and Heading */}
         <div className="flex flex-col items-left">
         {step !== 3 && step !== 4 && step !== 5 && (
-          <div className="flex flex-col items-center justify-center">
-            <Image src={signupLogo} alt="signupLogo" />
-          </div>
+          <Link href="/">
+            <div className="flex flex-col items-center justify-center">
+              <Image src={signupLogo} alt="signupLogo" />
+            </div>
+          </Link>
         )}
           
           {step === 1 && (

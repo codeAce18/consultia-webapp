@@ -63,9 +63,11 @@ export function LoginForm() {
           }}
         >
             {/* Logo */}
-            <div className="flex justify-center">
+            <Link href="/">
+              <div className="flex justify-center">
                 <Image src={signupLogo} alt="signupLogo"  />
-            </div>
+              </div>
+            </Link>
 
             {/* Heading */}
             <h2 style={{

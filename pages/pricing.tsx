@@ -126,31 +126,35 @@ const Pricing = () => {
                                         <div className="flex flex-col items-left justify-start gap-y-[10px]">
                                             <div className="flex items-center gap-[7px]">
                                                 <Image src={tickCircle} alt="tickCircle" />
-                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-[#101828]">Client Onboarding</p>
+                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-[#101828]">Everythig in essential</p>
                                             </div>
                                             <div className="flex items-center gap-[7px]">
                                                 <Image src={tickCircle} alt="tickCircle" />
-                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-[#101828]">Basic Task Management</p>
+                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-[#101828]">Advanced Task Management</p>
                                             </div>
                                             <div className="flex items-center gap-[7px]">
                                                 <Image src={tickCircle} alt="tickCircle" />
-                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-[#101828]">Basic Compliance Tracking</p>
+                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-[#101828]">Advanced Compliance Tracking</p>
                                             </div>
                                             <div className="flex items-center gap-[7px]">
                                                 <Image src={tickCircle} alt="tickCircle" />
-                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-[#101828]">Invoicing</p>
+                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-[#101828]">Reporting & Analytics</p>
                                             </div>
                                             <div className="flex items-center gap-[7px]">
                                                 <Image src={tickCircle} alt="tickCircle" />
-                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-[#101828]">Up to 5 clients</p>
+                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-[#101828]">Up to 20 clients</p>
                                             </div>
                                             <div className="flex items-center gap-[7px]">
                                                 <Image src={tickCircle} alt="tickCircle" />
-                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-[#101828]">Email Support</p>
+                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-[#101828]">Priority Email Support</p>
                                             </div>
                                             <div className="flex items-start gap-[7px]">
                                                 <Image src={tickCircle} alt="tickCircle" />
-                                                <p className="max-w-[270px] text-[16.5px] leading-[23.1px] font-normal text-[#101828]">Best for small consultancies just getting started</p>
+                                                <p className="max-w-[270px] text-[16.5px] leading-[23.1px] font-normal text-[#101828]">Phone Support</p>
+                                            </div>
+                                            <div className="flex items-start gap-[7px]">
+                                                <Image src={tickCircle} alt="tickCircle" />
+                                                <p className="max-w-[260px] text-[16.5px] leading-[23.1px] font-normal text-[#101828]">Ideal for growing consultancy firms that need a few key clients to expand their client base.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -178,31 +182,41 @@ const Pricing = () => {
                                         <div className="flex flex-col text-white items-left justify-start gap-y-[10px]">
                                             <div className="flex items-center gap-[7px]">
                                                 <Image src={CheckWhite} alt="CheckWhite" />
-                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-white">Client Onboarding</p>
+                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-white">Everything in professional</p>
                                             </div>
                                             <div className="flex items-center gap-[7px]">
                                                 <Image src={CheckWhite} alt="CheckWhite" />
-                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-white">Basic Task Management</p>
+                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-white">Custom Workflows</p>
                                             </div>
                                             <div className="flex items-center gap-[7px]">
                                                 <Image src={CheckWhite} alt="CheckWhite" />
-                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-white">Basic Compliance Tracking</p>
+                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-white">API Access</p>
                                             </div>
                                             <div className="flex items-center gap-[7px]">
                                                 <Image src={CheckWhite} alt="CheckWhite" />
-                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-white">Invoicing</p>
+                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-white">Premium Support</p>
                                             </div>
                                             <div className="flex items-center gap-[7px]">
                                                 <Image src={CheckWhite} alt="CheckWhite" />
-                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-white">Up to 5 clients</p>
+                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-white">Dedicated Account Manager</p>
                                             </div>
                                             <div className="flex items-center gap-[7px]">
                                                 <Image src={CheckWhite} alt="CheckWhite" />
-                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-white">Email Support</p>
+                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-white">Unlimited clients</p>
                                             </div>
                                             <div className="flex items-start gap-[7px]">
                                                 <Image src={CheckWhite} alt="CheckWhite" />
-                                                <p className="max-w-[270px] text-[16.5px] leading-[23.1px] font-normal text-white">Best for small consultancies just getting started</p>
+                                                <p className="max-w-[270px] text-[16.5px] leading-[23.1px] font-normal text-white">24/7 Premium Support</p>
+                                            </div>
+
+                                            <div className="flex items-start gap-[7px]">
+                                                <Image src={CheckWhite} alt="CheckWhite" />
+                                                <p className="max-w-[270px] text-[16.5px] leading-[23.1px] font-normal text-white">Custom Training</p>
+                                            </div>
+
+                                            <div className="flex items-start gap-[7px]">
+                                                <Image src={CheckWhite} alt="CheckWhite" />
+                                                <p className="max-w-[294px] text-[16.5px] leading-[23.1px] font-normal text-white">Ideal for consultancy firms seeking access to a large client base for rapid, exponential growth.</p>
                                             </div>
                                         </div>
                                     </div>

@@ -13,6 +13,8 @@ import SixImg from "../../public/assets/six.png"
 import SevenImg from "../../public/assets/seven.png"
 import RightArrow from "../../public/assets/RightArrow.svg"
 import LeftArrow from "../../public/assets/LeftArrow.svg"
+import GeometricPlus from "../../public/assets/GeometricPlus.svg"
+import GeometricTriangle from "../../public/assets/GeometricTriangle.svg"
 
 
 const Hero = () => {
@@ -30,9 +32,9 @@ const Hero = () => {
     return (
         <div>
         
-        <div className="relative lg:h-[830px] h-[740px] bg-hero-left bg-cover bg-center bg-no-repeat">
+        <div className="relative lg:h-[830px]  h-[780px] bg-hero-left bg-cover bg-center bg-no-repeat">
             {/* Main content area */}
-            <div className="flex flex-col items-center lg:absolute lg:inset-0 lg:bg-hero-right lg:bg-right  lg:bg-no-repeat lg:pt-20 pt-10">
+            <div className="flex flex-col items-center lg:absolute  lg:inset-0 lg:bg-hero-right lg:bg-right  lg:bg-no-repeat lg:pt-20 pt-10">
                 <h1 className="lg:text-[61px] text-[45px] lg:leading-[73.2px] leading-[60px] font-extrabold text-[#101828] text-center max-w-[90%] md:max-w-[1188px] mx-auto">
                 Streamline Workflows. Connect with Consultants Effortlessly.
                 </h1>
@@ -114,6 +116,15 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
+            </div>
+
+
+            <div className=" absolute top-[743.44px] left-[208.69px] Plus"> 
+                <Image width={28.21} height={29.8} src={GeometricPlus} alt="GeometricPlus" />
+            </div>
+
+            <div className=" absolute top-[774.7px] left-[1215px] Triangle"> 
+                <Image width={89.17} height={78.2} src={GeometricTriangle} alt="GeometricTriangle" />
             </div>
 
         </div>

@@ -102,3 +102,127 @@ body {
     padding-left: 350px;
   }
 }
+
+@media (min-width: 2112px) {
+  .text {
+    padding-left: 700px;
+  }
+}
+
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+  .Plus {
+  
+    left: 480px;
+  }
+}
+
+@media  (max-width: 1500px)  {
+  .Plus {
+  
+    left: 140px;
+  }
+}
+
+@media  (max-width: 1240px)  {
+  .Plus {
+    visibility: hidden;
+  }
+
+  .Triangle {
+    visibility:hidden;
+  }
+
+  .PlusInsight {
+    visibility:hidden;
+  }
+}
+
+
+
+@media (min-width: 5280px) {
+  .Plus {
+    left: 0;
+  
+  }
+}
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.Plus {
+  animation: rotate 2s linear infinite; /* Adjust duration as needed */
+}
+
+.Triangle {
+  animation: rotate 2s linear infinite;
+}
+
+.PlusInsight {
+  animation: rotate 2s linear infinite;
+}
+/* 
+@media (min-width: 3380px) {
+  .Plus {
+  
+    left: 2500px;
+  }
+} */
+
+
+@media (min-width: 2112px) {
+  .Plus {
+  
+    left: 800px;
+  }
+}
+
+@media (min-width: 2112px) {
+  .Triangle {
+    left: 1850px;
+  }
+}
+
+
+
+@media (min-width: 5280px) {
+  .Triangle {
+  
+    left: 3280px;
+  }
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+  .Triangle {
+  
+    left: 1520px;
+  }
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+  .PlusInsight {
+    left:970px;
+  
+  }
+}
+
+@media (min-width: 2112px) {
+  .PlusInsight {
+    left: 1300px;
+  }
+}
+
+@media (min-width: 5280px) {
+  .PlusInsight {
+  
+    left: 2580px;
+  }
+}
+
+

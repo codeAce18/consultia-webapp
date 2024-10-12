@@ -2,11 +2,12 @@ import { Navbar } from "@/app/components/Navbar";
 import "../app/globals.css";
 import Image from 'next/image';
 import InsightImage from "../public/assets/InsightImage.png"
-import Email from "../public/assets/Email.svg"
+// import Email from "../public/assets/Email.svg"
 import BlogsFeaturedImage1 from "../public/assets/BlogsFeaturedImage1.svg"
 import BlogsFeaturedImage2 from "../public/assets/BlogsFeaturedImage2.svg"
 import BlogsFeaturedImage3 from "../public/assets/BlogsFeaturedImage3.svg"
 import BlogsFeaturedImage4 from "../public/assets/BlogsFeaturedImage4.svg"
+import GeometricPlus from "../public/assets/GeometricPlus.svg"
 
 import Link from "next/link";
 import { JoinOurMission } from "@/app/components/JoinOurMission";
@@ -21,7 +22,7 @@ const insights = () => {
 
             <Navbar />
 
-            <div>
+            <div className="relative">
                 <div className="lg:pt-20 pt-10 lg:flex lg:flex-row flex flex-col items-center justify-center gap-20">
                     <div className="flex flex-col items-left justify-start">
                        <h1 className="text-[#101828] lg:mx-0  mx-auto text-[61px] leading-[73.2px] font-bold">Insights</h1>
@@ -207,6 +208,10 @@ const insights = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div className=" absolute top-[1255.52px] left-[654.69px] PlusInsight"> 
+                    <Image width={28.21} height={29.8} src={GeometricPlus} alt="GeometricPlus" />
                 </div>
             </div>
 
