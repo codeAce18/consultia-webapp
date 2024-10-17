@@ -19,7 +19,7 @@ export function JoinOurMission () {
                     <Image width={139.5} height={37.25} src={Customers} alt="Customers" />
                   
                     <h4 className='max-w-[214px] text-left text-white text-[13px] lg:text-[16.5px] font-medium lg:leading-[24.75px] leading-[19.5px]'>
-                     Over 15k+ Customers and Companies Trust Us.
+                        Over 100k+ Customers  and Companies Trust Us.
                     </h4>
                 </div>
                 </div>

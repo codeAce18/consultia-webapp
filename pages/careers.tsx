@@ -27,12 +27,6 @@ const career = () => {
 
             <Navbar />
             <div>
-                <div className="lg:flex hidden">
-                    <Image className="w-full mx-auto" src={CareerImage} alt="CareerImage" />
-                </div>
-                <div className="lg:hidden flex  bg-cover bg-center">
-                    <Image className="w-full mx-auto" width={393} height={462} src={mobileImage} alt="mobileImage" />
-                </div>
                 <div className="lg:pt-20 pt-10 flex flex-col items-center justify-center text-center ">
                     
                     <h1 className="text-[#101828] text-[39px] lg:text-[61px] leading-[46.8px] lg:leading-[73.2px] font-bold max-w-[393px] lg:max-w-[1002px]">

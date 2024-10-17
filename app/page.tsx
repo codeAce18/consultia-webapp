@@ -7,6 +7,7 @@ import { OrientedPeople } from "./components/OrientedPeople";
 import { Testimonial } from "./components/Testimonial";
 import { JoinOurMission } from "./components/JoinOurMission";
 import { Footer } from "./components/Footer";
+import { TrustedCompanies } from "./components/TrustedCompanies";
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
+      <TrustedCompanies />
       <Features />
       <WhyConsultia />
       <OrientedPeople />

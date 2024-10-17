@@ -32,7 +32,7 @@ const Hero = () => {
     return (
         <div>
         
-        <div className="relative lg:h-[830px]  h-[780px] bg-hero-left bg-cover bg-center bg-no-repeat">
+        <div className="relative lg:h-[830px]  h-[740px] bg-hero-left bg-cover bg-center bg-no-repeat">
             {/* Main content area */}
             <div className="flex flex-col items-center lg:absolute  lg:inset-0 lg:bg-hero-right lg:bg-right  lg:bg-no-repeat lg:pt-20 pt-10">
                 <h1 className="lg:text-[61px] text-[45px] lg:leading-[73.2px] leading-[60px] font-extrabold text-[#101828] text-center max-w-[90%] md:max-w-[1188px] mx-auto">
@@ -69,9 +69,9 @@ const Hero = () => {
             <div className="lg:pt-10 pt-6 p-[20px] lg:p-0">
             <div className="py-[10px] px-[30px] mx-auto lg:flex lg:flex-row flex-col flex items-center justify-center gap-20 bg-[#FFFFFF] max-w-[90%] md:max-w-[1080px] shadow-custom-white">
                 <div className="text-center lg:text-left">
-                <h1 className="text-[40px] text-[#4E4B66] font-extrabold leading-[48.41px]">15,300+</h1>
+                <h1 className="text-[40px] text-[#4E4B66] font-extrabold leading-[48.41px]">100K+</h1>
                 <h3 className="text-[16px] font-normal leading-[22px] text-[#727474] max-w-[237px]">
-                    Consultants and clients from different sectors use Consultia.
+                    Clients from different part of the world use Consultia..
                 </h3>
                 </div>
                 <div className="hidden lg:flex items-center justify-center gap-[10px]">
