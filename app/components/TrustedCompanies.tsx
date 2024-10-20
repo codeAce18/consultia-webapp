@@ -22,7 +22,7 @@ export function TrustedCompanies()  {
 
             <div className="pt-10">
                 <div className="flex justify-center items-center">
-                    <div className="grid lg:grid-cols-5 grid-cols-1 gap-y-10 lg:gap-x-10">
+                    <div  className="grid lg:grid-cols-5 grid-cols-1 gap-y-10 lg:gap-x-10">
                         <div>
                             <Image src={GmonieLogo} alt="GmonieLogo" />
                         </div>

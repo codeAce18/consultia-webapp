@@ -16,7 +16,7 @@ export function Testimonial() {
     return(
       <div className="pt-20">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-[#101828] max-w-[856px] text-[49px] leading-[68.6px] font-bold text-center">
+          <h1 className="text-[#101828] max-w-[856px] text-[49px] leading-[58px] font-bold text-center">
           Discover why thousands of users trust us. Hear their stories!
           </h1>
         </div>

@@ -20,7 +20,7 @@ export function OrientedPeople() {
     return(
         <div className="pt-16">
             <div>
-                <h1 className="text-[49px] leading-[68.6px] text-[#101828] max-w-[898px] text-center mx-auto font-bold">Result Oriented People Achieve More With Consultia, Globally.</h1>
+                <h1 className="text-[49px] leading-[58px] text-[#101828] max-w-[898px] text-center mx-auto font-bold">Result Oriented People Achieve More With Consultia, Globally.</h1>
             </div>
 
             <div>

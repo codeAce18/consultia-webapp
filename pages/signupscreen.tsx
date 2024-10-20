@@ -12,6 +12,7 @@ import "../app/globals.css";
 import { EyeOpenIcon, EyeClosedIcon } from "@radix-ui/react-icons"; // Radix UI icons
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import Watermark from "../public/assets/Watermark.svg";
  // Assuming you have a Select component
 import Link from 'next/link';
 
@@ -154,8 +155,8 @@ const SignupScreen = () => {
   
 
   return (
-    <div className="bg-[#5B52B6] h-screen flex flex-col items-center justify-center">
-      <div className="bg-white lg:w-[540px] w-[350px] py-[48px] px-[70px] rounded-[16px] relative">
+    <div className="bg-[#5B52B6] h-screen flex flex-col items-center justify-center relative">
+      <div className="bg-white lg:w-[540px] w-[350px] py-[48px] px-[70px] rounded-[16px] relative z-50">
         
         {/* Logo and Heading */}
         <div className="flex flex-col items-left">
@@ -478,6 +479,10 @@ const SignupScreen = () => {
             </div>
           </div>
         )}
+      </div>
+
+      <div className="absolute top-[305px] left-[850px] w-[513.99px] Watermark h-[300.4px]">
+        <Image  src={Watermark} alt="Watermark" />
       </div>
       
     </div>

@@ -9,10 +9,10 @@ import featureIcon5 from "../../public/assets/featureIcon5.svg";
 
 export function Features()  {
     return (
-        <div className="pt-20">
+        <div className="pt-32">
            <div>
                 <div className="text-center mx-auto">
-                    <h1 className="text-[49px] leading-[73.5px] font-bold text-[#101828] max-w-[618px] text-center mx-auto">Key features that stand Consultia out.</h1>
+                    <h1 className="text-[49px] leading-[58px] font-bold text-[#101828] max-w-[618px] text-center mx-auto">Key features that stand Consultia out.</h1>
                 </div>
 
                 <div className="lg:pt-20  pt-16 lg:flex items-center justify-center  lg:gap-10">

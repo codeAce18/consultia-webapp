@@ -31,7 +31,7 @@ const features = () => {
                     <div className="lg:pt-20 pt-10 lg:flex lg:flex-row flex flex-col-reverse items-center justify-center lg:gap-16">
                         <div className="flex flex-col  items-start">
                             <div className="mx-auto lg:mx-0 text-center lg:text-left">
-                                <h1 className="text-[#101828] lg:text-[49px] text-[39px] font-bold lg:leading-[73.5px] leading-[46.8px] max-w-[460px]">Find Vetted Constants Instantly</h1>
+                                <h1 className="text-[#101828] lg:text-[49px] text-[39px] font-bold lg:leading-[58px] leading-[46.8px] max-w-[460px]">Find Vetted Constants Instantly</h1>
                                 <p className="pt-[15px] text-[14px] leading-[21px] font-medium text-[#41404B]">Effortless Client Onboarding for a Smooth Start</p>
                             </div>
 
@@ -150,7 +150,7 @@ const features = () => {
                     <div className="lg:pt-20 pt-10 lg:flex lg:flex-row flex flex-col-reverse items-center justify-center lg:gap-20">
                         <div className="flex flex-col  items-start">
                             <div className="mx-auto lg:mx-0 text-center lg:text-left">
-                                <h1 className="text-[#101828] lg:text-[49px] text-[39px] font-bold lg:leading-[73.5px] leading-[46.8px] max-w-[460px]">Connect with other Consultants</h1>
+                                <h1 className="text-[#101828] lg:text-[49px] text-[39px] font-bold lg:leading-[58px] leading-[46.8px] max-w-[460px]">Connect with other Consultants</h1>
                                 <p className="pt-[15px] text-[14px] leading-[21px] font-medium text-[#41404B]">Effortless Client Onboarding for a Smooth Start</p>
                             </div>
 
@@ -272,7 +272,7 @@ const features = () => {
                     <div className="lg:pt-20 pt-10 lg:flex lg:flex-row flex flex-col-reverse items-center justify-center lg:gap-20">
                         <div className="flex flex-col  items-start">
                             <div className="mx-auto lg:mx-0 text-center lg:text-left">
-                                <h1 className="text-[#101828] lg:text-[49px] text-[39px] font-bold lg:leading-[73.5px] leading-[46.8px] max-w-[465px]">Compliance Tracking</h1>
+                                <h1 className="text-[#101828] lg:text-[49px] text-[39px] font-bold lg:leading-[58px] leading-[46.8px] max-w-[465px]">Compliance Tracking</h1>
                                 <p className="pt-[15px] text-[14px] leading-[21px] font-medium text-[#41404B]">Stay Ahead of Compliance Requirements</p>
                             </div>
 
@@ -392,7 +392,7 @@ const features = () => {
                     <div className="lg:pt-20 pt-10 lg:flex lg:flex-row flex flex-col-reverse items-center justify-center lg:gap-20">
                         <div className="flex flex-col  items-start">
                             <div className="mx-auto lg:mx-0 text-center lg:text-left">
-                                <h1 className="text-[#101828] lg:text-[49px] text-[39px] font-bold lg:leading-[73.5px] leading-[46.8px] max-w-[465px]">Reporting & Analytics</h1>
+                                <h1 className="text-[#101828] lg:text-[49px] text-[39px] font-bold lg:leading-[58px] leading-[46.8px] max-w-[465px]">Reporting & Analytics</h1>
                                 <p className="pt-[15px] text-[14px] leading-[21px] font-medium text-[#41404B]">Gain Insights with Comprehensive Reporting</p>
                             </div>
 
