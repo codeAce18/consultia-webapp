@@ -11,6 +11,8 @@ import features2 from "../public/assets/features2.png";
 import features3 from "../public/assets/features3.png";
 import features4 from "../public/assets/feature4.png";
 import features5 from "../public/assets/features5.png";
+import VettedImage from "../public/assets/VettedImage.svg"
+import ConnectImage from "../public/assets/ConnectImage.svg"
 import { JoinOurMission } from "@/app/components/JoinOurMission";
 import { Footer } from "@/app/components/Footer";
 
@@ -23,6 +25,65 @@ const features = () => {
                     <h1 className="lg:text-[61px] text-[48px] lg:max-w-[1002px] max-w-[361px] lg:leading-[73.2px] leading-[57.6px] font-extrabold text-[#101828]">Powerful Features to Drive Your Consultancy&apos;s Success</h1>
 
                     <p className="pt-[15px] text-[14px] leading-[21px] font-normal text-[#41404B]">From Client Onboarding to Invoicing, We&apos;ve Got You Covered</p>
+               </div>
+
+               <div>
+                    <div className="lg:pt-20 pt-10 lg:flex lg:flex-row flex flex-col-reverse items-center justify-center lg:gap-16">
+                        <div className="flex flex-col  items-start">
+                            <div className="mx-auto lg:mx-0 text-center lg:text-left">
+                                <h1 className="text-[#101828] lg:text-[49px] text-[39px] font-bold lg:leading-[73.5px] leading-[46.8px] max-w-[460px]">Find Vetted Constants Instantly</h1>
+                                <p className="pt-[15px] text-[14px] leading-[21px] font-medium text-[#41404B]">Effortless Client Onboarding for a Smooth Start</p>
+                            </div>
+
+                            <div className="p-[20px] lg:p-0 lg:pt-[15px] mx-auto lg:mx-0  flex items-start gap-[6px] justify-start">
+                                <Image src={check} alt="check" />
+                                <div>
+                                    <h1 className="text-[20px] leading-[30px] text-[#101828] font-medium">Streamlined Process:</h1>
+                                    <p className="text-[#101828] text-[16px] leading-[24.75px] font-normal max-w-[433px]">Add new clients easily with a user-friendly form or import from LinkedIn/CSV files.</p>
+                                </div>
+                            </div>
+
+                            <div className="p-[20px] lg:p-0 lg:pt-[15px] pt-[10px] mx-auto  lg:mx-0 flex items-start gap-[6px] justify-start">
+                                <Image src={check} alt="check" />
+                                <div>
+                                    <h1  className="text-[20px] leading-[30px] text-[#101828] font-medium">Onboarding Checklists:</h1>
+                                    <p className="text-[#101828] text-[16px] leading-[24.75px] font-normal max-w-[433px]">Ensure nothing is missed with customizable checklists that guide you through the onboarding process.</p>
+                                </div>
+                            </div>
+
+                            <div className="p-[20px] lg:p-0 lg:pt-[15px] pt-[10px] mx-auto  lg:mx-0 flex items-start gap-[6px] justify-start">
+                                <Image src={check} alt="check" />
+                                <div>
+                                    <h1  className="text-[20px] leading-[30px] text-[#101828] font-medium">Integrated Communication:</h1>
+                                    <p className="text-[#101828] text-[16px] leading-[24.75px] font-normal max-w-[433px]">Communicate with clients directly through the platform, with automated logging of all interactions.</p>
+                                </div>
+                            </div>
+
+                            <div className="pt-10 flex mx-auto lg:mx-0 items-center justify-start gap-[15px]">
+                                <div>
+                                    <Link href="/">
+                                        <button className="bg-[#5B52B6] rounded-[8px] p-[10px] text-white text-[16px] max-w-[181px] font-bold leading-[19.2px]">
+                                            Create Account
+                                        </button>
+                                    </Link>
+                                </div>
+
+                                <div>
+                                    <Link href="/">
+                                        <button className="border-[2px] border-[#E9AF0A] rounded-[8px] p-[10px] text-[#101828] text-[16px] max-w-[159px] font-medium leading-[19.2px]">
+                                            Learn More
+                                        </button>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+
+                                
+
+                        <div className="p-[20px] lg:p-0 flex items-center justify-center">
+                            <Image width={610} height={494} src={VettedImage} alt="VettedImage" />
+                        </div>
+                    </div>
                </div>
 
                <div>
@@ -80,6 +141,66 @@ const features = () => {
 
                         <div className="p-[20px] lg:p-0 flex items-center justify-center">
                             <Image width={610} height={494} src={features1} alt="features1" />
+                        </div>
+                    </div>
+               </div>
+
+
+               <div>
+                    <div className="lg:pt-20 pt-10 lg:flex lg:flex-row flex flex-col-reverse items-center justify-center lg:gap-20">
+                        <div className="flex flex-col  items-start">
+                            <div className="mx-auto lg:mx-0 text-center lg:text-left">
+                                <h1 className="text-[#101828] lg:text-[49px] text-[39px] font-bold lg:leading-[73.5px] leading-[46.8px] max-w-[460px]">Connect with other Consultants</h1>
+                                <p className="pt-[15px] text-[14px] leading-[21px] font-medium text-[#41404B]">Effortless Client Onboarding for a Smooth Start</p>
+                            </div>
+
+                            <div className="p-[20px] lg:p-0 lg:pt-[15px] mx-auto lg:mx-0  flex items-start gap-[6px] justify-start">
+                                <Image src={check} alt="check" />
+                                <div>
+                                    <h1 className="text-[20px] leading-[30px] text-[#101828] font-medium">Streamlined Process:</h1>
+                                    <p className="text-[#101828] text-[16px] leading-[24.75px] font-normal max-w-[433px]">Add new clients easily with a user-friendly form or import from LinkedIn/CSV files.</p>
+                                </div>
+                            </div>
+
+                            <div className="p-[20px] lg:p-0 lg:pt-[15px] pt-[10px] mx-auto  lg:mx-0 flex items-start gap-[6px] justify-start">
+                                <Image src={check} alt="check" />
+                                <div>
+                                    <h1  className="text-[20px] leading-[30px] text-[#101828] font-medium">Onboarding Checklists:</h1>
+                                    <p className="text-[#101828] text-[16px] leading-[24.75px] font-normal max-w-[433px]">Ensure nothing is missed with customizable checklists that guide you through the onboarding process.</p>
+                                </div>
+                            </div>
+
+                            <div className="p-[20px] lg:p-0 lg:pt-[15px] pt-[10px] mx-auto  lg:mx-0 flex items-start gap-[6px] justify-start">
+                                <Image src={check} alt="check" />
+                                <div>
+                                    <h1  className="text-[20px] leading-[30px] text-[#101828] font-medium">Integrated Communication:</h1>
+                                    <p className="text-[#101828] text-[16px] leading-[24.75px] font-normal max-w-[433px]">Communicate with clients directly through the platform, with automated logging of all interactions.</p>
+                                </div>
+                            </div>
+
+                            <div className="pt-10 flex mx-auto lg:mx-0 items-center justify-start gap-[15px]">
+                                <div>
+                                    <Link href="/">
+                                        <button className="bg-[#5B52B6] rounded-[8px] p-[10px] text-white text-[16px] max-w-[181px] font-bold leading-[19.2px]">
+                                            Create Account
+                                        </button>
+                                    </Link>
+                                </div>
+
+                                <div>
+                                    <Link href="/">
+                                        <button className="border-[2px] border-[#E9AF0A] rounded-[8px] p-[10px] text-[#101828] text-[16px] max-w-[159px] font-medium leading-[19.2px]">
+                                            Learn More
+                                        </button>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+
+                                
+
+                        <div className="p-[20px] lg:p-0 flex items-center justify-center">
+                            <Image width={610} height={494} src={ConnectImage} alt="ConnectImage" />
                         </div>
                     </div>
                </div>
