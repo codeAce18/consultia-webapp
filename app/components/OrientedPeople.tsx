@@ -18,7 +18,7 @@ export function OrientedPeople() {
       setActiveClient(clientId);
     };
     return(
-        <div className="pt-16">
+        <div className="pt-20">
             <div>
                 <h1 className="text-[49px] leading-[58px] text-[#101828] max-w-[898px] text-center mx-auto font-bold">Result Oriented People Achieve More With Consultia, Globally.</h1>
             </div>

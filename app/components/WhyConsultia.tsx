@@ -7,7 +7,7 @@ import chooseCard4 from "../../public/assets/chooseCard4.png";
 
 export function WhyConsultia() {
     return (
-        <div className="pt-32">
+        <div className="pt-20">
             <div className="text-center">
                 <h1 className="text-[49px] leading-[73.5px] font-bold text-[#101828]">Why Choose Consultia?</h1>
             </div>

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from 'react';
-import HeroImg from "../../public/assets/Hero.png";
+import HeroD from "../../public/assets/HeroD.svg";
 import OneImg from "../../public/assets/one.png"
 import TwoImg from "../../public/assets/two.png"
 import ThreeImg from "../../public/assets/three.png"
@@ -47,20 +47,24 @@ const Hero = () => {
 
                 <div className="pt-10 flex items-center justify-center lg:gap-10 gap-6 flex-wrap">
                 <div>
-                    <button className="bg-[#5B52B6] lg:w-[160px] w-[154px] lg:text-[16px] text-[12px] leading-[19.2px] font-semibold text-white p-[10px] rounded-[8px]">
-                    Book a Demo
-                    </button>
+                    <Link href="/getintouch">
+                        <button className="bg-[#5B52B6] lg:w-[160px] w-[154px] lg:text-[16px] text-[12px] leading-[19.2px] font-semibold text-white p-[10px] rounded-[8px]">
+                        Book a Demo
+                        </button>
+                    </Link>
                 </div>
 
                 <div>
-                    <button className="border-2 border-custom-yellow lg:text-[16px] text-[12px] leading-[19.2px] font-semibold text-[#101828] p-[10px] lg:w-[159px] w-[145px] rounded-[8px]">
-                    Get Started
-                    </button>
+                    <Link href="/signupscreen">
+                        <button className="border-2 border-custom-yellow lg:text-[16px] text-[12px] leading-[19.2px] font-semibold text-[#101828] p-[10px] lg:w-[159px] w-[145px] rounded-[8px]">
+                        Get Started
+                        </button>
+                    </Link>
                 </div>
                 </div>
 
                 <div className="pt-16 p-[20px] lg:overflow-hidden overflow-hidden">
-                <Image className="mx-auto overflow-hidden" width={939.85} height={586} src={HeroImg} alt="HeroImg" />
+                <Image className="mx-auto overflow-hidden" width={939.85} height={586} src={HeroD} alt="HeroD" />
                 </div>
             </div>
             </div>
@@ -123,7 +127,8 @@ const Hero = () => {
                 <Image width={28.21} height={29.8} src={GeometricPlus} alt="GeometricPlus" />
             </div>
 
-            <div className=" absolute top-[774.7px] left-[1215px] Triangle"> 
+            <div className=" absolute top-[774.7px] left-[1215px] Triangle animate-breathing"
+             style={{ animation: 'breathing 3s ease-in-out infinite' }}> 
                 <Image width={89.17} height={78.2} src={GeometricTriangle} alt="GeometricTriangle" />
             </div>
 

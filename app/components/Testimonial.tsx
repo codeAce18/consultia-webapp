@@ -21,7 +21,7 @@ export function Testimonial() {
           </h1>
         </div>
 
-        <div className="pt-20 p-[20px]">
+        <div className="pt-10 p-[20px]">
           <div className="flex items-center justify-center">
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-y-[20px] gap-x-[20px]">
               <div>

@@ -155,7 +155,7 @@ body {
 @media (min-width: 1920px) and (max-width: 2560px) {
   .Plus {
   
-    left: 480px;
+    left: 400px;
   }
 }
 
@@ -202,9 +202,22 @@ body {
   animation: rotate 2s linear infinite; /* Adjust duration as needed */
 }
 
-.Triangle {
-  animation: rotate 2s linear infinite;
+@keyframes breathing {
+  0% {
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    transform: scale(1.5); /* Slightly larger */
+  }
+  100% {
+    transform: scale(1); /* Back to normal size */
+  }
 }
+
+
+/* .Triangle {
+  animation: rotate 2s linear infinite;
+} */
 
 .PlusInsight {
   animation: rotate 2s linear infinite;
@@ -221,7 +234,7 @@ body {
 @media (min-width: 2112px) {
   .Plus {
   
-    left: 800px;
+    left: 700px;
   }
 }
 
