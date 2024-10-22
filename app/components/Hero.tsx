@@ -32,7 +32,7 @@ const Hero = () => {
     return (
         <div>
         
-        <div className="relative lg:h-[930px]  h-[740px] bg-hero-left bg-cover bg-center bg-no-repeat">
+        <div className="relative lg:h-[830px]  h-[740px] bg-hero-left bg-cover bg-center bg-no-repeat">
             {/* Main content area */}
             <div className="flex flex-col items-center lg:absolute  lg:inset-0 lg:bg-hero-right lg:bg-right  lg:bg-no-repeat lg:pt-20 pt-10">
                 <h1 className="lg:text-[61px] text-[45px] lg:leading-[73.2px] leading-[60px] font-extrabold text-[#101828] text-center max-w-[90%] md:max-w-[1188px] mx-auto">
@@ -63,7 +63,7 @@ const Hero = () => {
                 </div>
                 </div>
 
-                <div className="lg:pt-32 pt-[55px] p-[20px] lg:overflow-hidden overflow-hidden">
+                <div className="lg:pt-10 pt-[55px] p-[20px] lg:overflow-hidden overflow-hidden">
                 <Image className="mx-auto overflow-hidden" width={939.85} height={586} src={HeroD} alt="HeroD" />
                 </div>
             </div>
