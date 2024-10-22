@@ -63,7 +63,7 @@ const Hero = () => {
                 </div>
                 </div>
 
-                <div className="pt-32 p-[20px] lg:overflow-hidden overflow-hidden">
+                <div className="lg:pt-32 pt-[55px] p-[20px] lg:overflow-hidden overflow-hidden">
                 <Image className="mx-auto overflow-hidden" width={939.85} height={586} src={HeroD} alt="HeroD" />
                 </div>
             </div>
