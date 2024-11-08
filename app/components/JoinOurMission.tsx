@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from "next/link";
-import Customers from "../../public/assets/customers.png";
+import Customers from "../../public/assets/customers.svg";
 import missionSvg from "../../public/assets/missionSvg.svg";
 
 export function JoinOurMission () {
@@ -32,7 +32,7 @@ export function JoinOurMission () {
 
                 <div className='flex flex-col lg:flex-row items-center justify-center  pt-6 lg:pt-10 gap-[10px]'>
                     <div>
-                    <Link href="/">
+                    <Link href="/aboutus">
                         <button className="bg-white rounded-[8px] py-[10px] px-[20px] text-[#5B52B6] text-[16px] max-w-[206px] font-bold leading-[19.2px] w-full">
                             Learn More About Us
                         </button>
@@ -40,9 +40,9 @@ export function JoinOurMission () {
                     </div>
 
                     <div>
-                        <Link href="/">
+                        <Link href="/signupscreen">
                             <button className="border-[2px] border-[#E9AF0A] rounded-[8px] py-[10px] px-[20px] text-white text-[16px] lg:max-w-[204px] w-[204px] font-medium leading-[19.2px]">
-                                Join Our Team
+                                Sign up for free
                             </button>
                         </Link>
                     </div>

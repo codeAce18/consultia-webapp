@@ -6,11 +6,11 @@ import Link from "next/link";
 
 import check from "../public/assets/tick-circle.svg";
 
-import features1 from "../public/assets/features1.png";
-import features2 from "../public/assets/features2.png";
-import features3 from "../public/assets/features3.png";
-import features4 from "../public/assets/feature4.png";
-import features5 from "../public/assets/features5.png";
+import FeaturesImage1 from "../public/assets/FeaturesImage1.svg";
+import FeaturesImage2 from "../public/assets/FeaturesImage2.svg";
+import FeaturesImage3 from "../public/assets/FeaturesImage3.svg";
+import FeaturesImage4 from "../public/assets/FeaturesImage4.svg";
+import FeaturesImage5 from "../public/assets/FeaturesImage5.svg";
 import VettedImage from "../public/assets/VettedImage.svg"
 import ConnectImage from "../public/assets/ConnectImage.svg"
 import { JoinOurMission } from "@/app/components/JoinOurMission";
@@ -88,6 +88,13 @@ const features = () => {
 
                <div>
                     <div className="lg:pt-20 pt-10 lg:flex lg:flex-row flex flex-col-reverse items-center justify-center lg:gap-20">
+
+
+                        <div className="p-[20px] lg:p-0 flex items-center justify-center">
+                            <Image width={610} height={494} src={FeaturesImage1} alt="FeaturesImage1" />
+                        </div>
+
+
                         <div className="flex flex-col  items-start">
                             <div className="mx-auto lg:mx-0 text-center lg:text-left">
                                 <h1 className="text-[#101828] lg:text-[49px] text-[39px] font-bold lg:leading-[73.5px] leading-[46.8px]">Client Onboarding</h1>
@@ -139,9 +146,6 @@ const features = () => {
 
                                 
 
-                        <div className="p-[20px] lg:p-0 flex items-center justify-center">
-                            <Image width={610} height={494} src={features1} alt="features1" />
-                        </div>
                     </div>
                </div>
 
@@ -210,7 +214,7 @@ const features = () => {
                     <div className="lg:pt-20 pt-10 lg:flex lg:flex-row flex flex-col items-center justify-center lg:gap-20">
 
                         <div className="p-[20px] lg:p-0 flex items-center justify-center">
-                            <Image width={610} height={494} src={features2} alt="features2" />
+                            <Image width={610} height={494} src={FeaturesImage2} alt="FeaturesImage2" />
                         </div>
 
                         <div className="flex flex-col  items-start">
@@ -322,7 +326,7 @@ const features = () => {
                         </div>
 
                         <div className="p-[20px] lg:p-0 flex items-center justify-center">
-                            <Image width={610} height={494} src={features3} alt="features3" />
+                            <Image width={610} height={494} src={FeaturesImage3} alt="FeaturesImage3" />
                         </div>
                     </div>
                </div>
@@ -332,7 +336,7 @@ const features = () => {
                     <div className="lg:pt-20 pt-10 lg:flex lg:flex-row flex flex-col items-center justify-center lg:gap-20">
                         
                         <div className="p-[20px] lg:p-0 flex items-center justify-center">
-                            <Image width={610} height={494} src={features4} alt="features4" />
+                            <Image width={610} height={494} src={FeaturesImage4} alt="FeaturesImage4" />
                         </div>
 
 
@@ -442,7 +446,7 @@ const features = () => {
                         </div>
 
                         <div className="p-[20px] lg:p-0 flex items-center justify-center">
-                            <Image width={610} height={494} src={features5} alt="features5" />
+                            <Image width={610} height={494} src={FeaturesImage5} alt="FeaturesImage5" />
                         </div>
                     </div>
                </div>

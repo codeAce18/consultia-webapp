@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from 'react';
-import HeroD from "../../public/assets/HeroD.svg";
+import HeroMockup from "../../public/assets/HeroMockup.svg";
 import OneImg from "../../public/assets/one.png"
 import TwoImg from "../../public/assets/two.png"
 import ThreeImg from "../../public/assets/three.png"
@@ -11,6 +11,10 @@ import FourImg from "../../public/assets/four.png"
 import FiveImg from "../../public/assets/five.png"
 import SixImg from "../../public/assets/six.png"
 import SevenImg from "../../public/assets/seven.png"
+
+import EightImg from "../../public/assets/EightImage.svg"
+import NinthImg from "../../public/assets/NinthImage.svg"
+import TenthImg from "../../public/assets/TenthImage.svg"
 import RightArrow from "../../public/assets/RightArrow.svg"
 import LeftArrow from "../../public/assets/LeftArrow.svg"
 import GeometricPlus from "../../public/assets/GeometricPlus.svg"
@@ -39,7 +43,7 @@ const Hero = () => {
                 Streamline Workflows. Connect with Consultants Effortlessly.
                 </h1>
 
-                <p className="pt-[10px] text-[14px] font-normal leading-[21px] text-center text-[#41404B] lg:max-w-[1092px] max-w-[90%] md:max-w-[345px] mx-auto">
+                <p className="pt-[10px] lg:text-[20px] text-[14px] font-normal leading-[21px] text-center text-[#41404B] lg:max-w-[1092px] max-w-[90%] md:max-w-[345px] mx-auto">
                 Streamline client management processes by 70% with Consultia&apos;s fit-for-purpose consulting platform.
                 <br /> Automate workflows for onboarding, requisition, compliance and invoicing—all in one place.
                 <br /> Connecting clients with vetted consultants seamlessly.
@@ -64,7 +68,7 @@ const Hero = () => {
                 </div>
 
                 <div className="lg:pt-10 pt-[55px] p-[20px] lg:overflow-hidden overflow-hidden">
-                <Image className="mx-auto overflow-hidden" width={939.85} height={586} src={HeroD} alt="HeroD" />
+                <Image className="mx-auto overflow-hidden" width={939.85} height={586} src={HeroMockup} alt="HeroMockup" />
                 </div>
             </div>
             </div>
@@ -105,13 +109,13 @@ const Hero = () => {
                             <Image width={85} height={85} src={SevenImg} alt="SevenImg" />
                         </div>
                         <div className="flex-shrink-0">
-                            <Image width={85} height={85} src={SevenImg} alt="SevenImg" />
+                            <Image width={85} height={85} src={EightImg} alt="EightImg" />
                         </div>
                         <div className="flex-shrink-0">
-                            <Image width={83.99} height={85} src={SixImg} alt="SixImg" />
+                            <Image width={83.99} height={85} src={NinthImg} alt="NinthImg" />
                         </div>
                         <div className="flex-shrink-0">
-                            <Image width={85} height={85} src={SevenImg} alt="SevenImg" />
+                            <Image width={85} height={85} src={TenthImg} alt="TenthImg" />
                         </div>
                     </div>
 

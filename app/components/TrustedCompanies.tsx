@@ -1,14 +1,14 @@
 import Image from "next/image";
-import GmonieLogo from "../../public/assets/GmonieLogo.svg";
-import Campfire from "../../public/assets/Campfire.svg";
-import Firebase from "../../public/assets/Firebase.svg";
-import eetwell from "../../public/assets/eetwell.svg";
-import leland from "../../public/assets/leland.svg";
-import Helio from "../../public/assets/Helio.svg";
-import Makelog from "../../public/assets/Makelog.svg";
-import KillCliff from "../../public/assets/KillCliff.svg";
-import Helium from "../../public/assets/Helium.svg";
-import Cala from "../../public/assets/Cala.svg";
+import GtechLogo from "../../public/assets/GtechLogo.svg";
+import EcoWattLogo from "../../public/assets/EcoWattLogo.svg";
+import MeenaLogo from "../../public/assets/MeenaLogo.svg";
+import MsMeLogo from "../../public/assets/MsMeLogo.svg";
+import LeadLogo from "../../public/assets/LeadLogo.svg";
+import ConvexityLogo from "../../public/assets/ConvexityLogo.svg";
+import ProidEdgeLogo from "../../public/assets/ProidEdgeLogo.svg";
+import BrandEnvoLogo from "../../public/assets/BrandEnvoLogo.svg";
+import KloversLogo from "../../public/assets/KloversLogo.svg";
+import IndicinLogo from "../../public/assets/IndicinLogo.svg";
 
 
 
@@ -24,34 +24,34 @@ export function TrustedCompanies()  {
                 <div className="flex justify-center items-center">
                     <div  className="grid lg:grid-cols-5 grid-cols-1 gap-y-10 lg:gap-x-10">
                         <div>
-                            <Image src={GmonieLogo} alt="GmonieLogo" />
+                            <Image src={GtechLogo} alt="GtechLogo" />
                         </div>
                         <div>
-                            <Image src={Campfire} alt="Campfire" />
+                            <Image src={EcoWattLogo} alt="EcoWattLogo" />
                         </div>
                         <div>
-                            <Image src={Firebase} alt="Firebase" />
+                            <Image src={MeenaLogo} alt="MeenaLogo" />
                         </div>
                         <div>
-                            <Image src={eetwell} alt="eetwell" />
+                            <Image src={MsMeLogo} alt="MsMeLogo" />
                         </div>
                         <div>
-                            <Image src={leland} alt="leland" />
+                            <Image src={LeadLogo} alt="LeadLogo" />
                         </div>
                         <div>
-                            <Image src={Helio} alt="Helio" />
+                            <Image src={ConvexityLogo} alt="ConvexityLogo" />
                         </div>
                         <div>
-                            <Image src={Makelog} alt="Makelog" />
+                            <Image src={ProidEdgeLogo} alt="ProidEdgeLogo" />
                         </div>
                         <div>
-                            <Image src={KillCliff} alt="KillCliff" />
+                            <Image src={BrandEnvoLogo} alt="BrandEnvoLogo" />
                         </div>
                         <div>
-                            <Image src={Helium} alt="Helium" />
+                            <Image src={KloversLogo} alt="KloversLogo" />
                         </div>
                         <div>
-                            <Image src={Cala} alt="Cala" />
+                            <Image src={IndicinLogo} alt="IndicinLogo" />
                         </div>
                     </div>
                 </div>
