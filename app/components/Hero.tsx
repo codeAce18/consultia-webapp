@@ -43,7 +43,7 @@ const Hero = () => {
                 Streamline Workflows. Connect with Consultants Effortlessly.
                 </h1>
 
-                <p className="pt-[10px] lg:text-[20px] text-[14px] font-normal leading-[21px] text-center text-[#41404B] lg:max-w-[1092px] max-w-[90%] md:max-w-[345px] mx-auto">
+                <p className="pt-[10px] lg:text-[20px] text-[14px] font-normal lg:leading-[30px] leading-[21px] text-center text-[#41404B] lg:max-w-[1092px] max-w-[90%] md:max-w-[345px] mx-auto">
                 Streamline client management processes by 70% with Consultia&apos;s fit-for-purpose consulting platform.
                 <br /> Automate workflows for onboarding, requisition, compliance and invoicing—all in one place.
                 <br /> Connecting clients with vetted consultants seamlessly.
