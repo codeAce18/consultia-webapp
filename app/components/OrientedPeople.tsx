@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export function OrientedPeople() {
 
-    const [activeClient, setActiveClient] = useState(1); // 1 for first client, 2 for second client
+    const [activeClient, setActiveClient] = useState(1);   // 1 for first client, 2 for second client
 
     // Function to handle clicks on the client sections
     const handleClientClick = (clientId: number) => {
@@ -77,7 +77,7 @@ export function OrientedPeople() {
                             Your go-to platform for finding the right consulting service providers, regardless of your industry in Africa.
                         </h1>
                         <p className="pt-[15px] text-[#101828] text-[14px] lg:text-[16px] leading-[21.1px] lg:leading-[23.1px] max-w-[305px] lg:max-w-[505px]">
-                            Easily find vetted consultants and leverage Consultia&apos;s tools to submit job requisitions from your personalized dashboard. Monitor the progress of your project on the go and never miss any compliance requirements for your business or your clients.
+                        Easily find vetted consultants and leverage Consultia&apos;s tools to submit job requisitions from your personalized dashboard. Monitor the progress of your project on the go and never miss any compliance deadline for your business or your clients.
                         </p>
                         <h2 className="pt-[15px] text-[#5B52B6] underline text-[15px] lg:text-[17px] leading-[22px] lg:leading-[24px] font-semibold cursor-pointer">
                             Read more

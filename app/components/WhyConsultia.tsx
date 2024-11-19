@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Card1 from "../../public/assets/Card1.svg";
 import Card2 from "../../public/assets/Card2.svg";
-import Card3 from "../../public/assets/Card3.svg";
+import FeatureThree from "../../public/assets/FeatureThree.svg";
 import Card4 from "../../public/assets/Card4.svg";
 
 
@@ -21,7 +21,7 @@ export function WhyConsultia() {
                         <Image className="mx-auto" width={610} height={405} src={Card2} alt="Card2" />
                     </div>
                     <div>
-                        <Image className="mx-auto" width={610} height={405} src={Card3} alt="Card3" />
+                        <Image className="mx-auto" width={610} height={405} src={FeatureThree} alt="FeatureThree" />
                     </div>
                     <div>
                         <Image className="mx-auto" width={610} height={405} src={Card4} alt="Card4" />

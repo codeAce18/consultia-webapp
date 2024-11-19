@@ -20,8 +20,7 @@ const Faq = () => {
             <Navbar />
             <div className="pt-10">
                 <h1 className="flex flex-col items-center justify-center text-center text-[#101828] text-[49px] leading-[68.6px] font-bold">Frequently Asked Questions</h1>
-                <div className="pt-[25px] lg:pt-0 flex flex-col items-start  justify-center p-[20px]">
-                    <h1 className="text-[#5B52B6] text text-[25px] leading-[37.5px]  pb-[10px] lg:pb-0 font-bold">General</h1>
+                <div className="pt-[25px]  flex flex-col items-start  justify-center p-[20px]">
 
                     {/* First Accordion */}
                     <div className="w-full max-w-[1049px] mx-auto border border-[#E4E3EB] rounded-lg overflow-hidden mb-2">
@@ -36,7 +35,7 @@ const Faq = () => {
                         </div>
                         {openIndex === 0 && (
                             <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                <p className="text-gray-600">Yes, you can change your plan at any time. Upgrades or downgrades will take effect immediately.</p>
                             </div>
                         )}
                     </div>
@@ -54,13 +53,13 @@ const Faq = () => {
                         </div>
                         {openIndex === 1 && (
                             <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                <p className="text-gray-600">Yes, Consultia offers a 30-day free trial for new users. This allows consultants to explore the platform and access its features before committing to a subscription plan.</p>
                             </div>
                         )}
                     </div>
 
                     {/* Third Accordion */}
-                    <div className="w-full max-w-[1049px] mx-auto border border-[#E4E3EB] rounded-lg overflow-hidden mb-2">
+                    <div className="w-full max-w-[1049px] mx-auto border border-[#E4E3EB] rounded-lg overflow-hidden ">
                         <div 
                             className="flex items-center justify-between cursor-pointer p-4" 
                             onClick={() => toggleAccordion(2)}
@@ -72,14 +71,13 @@ const Faq = () => {
                         </div>
                         {openIndex === 2 && (
                             <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                <p className="text-gray-600">Consultia accepts major credit/debit cards, bank transfers, and mobile payment solutions to provide flexibility and convenience to users.</p>
                             </div>
                         )}
                     </div>
                 </div>
 
-                <div className="flex flex-col items-left justify-center p-[20px]">
-                    <h1 className="text-[#5B52B6] text-[25px] leading-[37.5px] font-bold pt-[10px] lg:pt-0 pb-[10px] lg:pb-0 lg:max-w-[165px] text ">Consulting Agency</h1>
+                <div className="flex flex-col items-left justify-center p-[20px] lg:pt-0">
                     
                     <div className="w-full max-w-[1049px] mx-auto border border-[#E4E3EB] rounded-lg overflow-hidden mb-2">
                         <div 
@@ -93,12 +91,12 @@ const Faq = () => {
                         </div>
                         {openIndex === 3 && (
                             <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                <p className="text-gray-600">Consultia is more than just a platform; it&apos;s a movement to redefine consultancy in Africa. It streamlines business management for consultancy firms while providing a dynamic marketplace for consultants to connect with clients. It combines essential business tools with advanced project and compliance management to empower consultants across Africa.</p>
                             </div>
                         )}
                     </div>
 
-                    <div className="w-full max-w-[1049px] mx-auto border border-[#E4E3EB] rounded-lg overflow-hidden mb-2">
+                    {/* <div className="w-full max-w-[1049px] mx-auto border border-[#E4E3EB] rounded-lg overflow-hidden mb-2">
                         <div 
                             className="flex items-center justify-between cursor-pointer p-4" 
                             onClick={() => toggleAccordion(4)}
@@ -113,7 +111,7 @@ const Faq = () => {
                                 <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
                             </div>
                         )}
-                    </div>
+                    </div> */}
 
                     <div className="w-full max-w-[1049px] mx-auto border border-[#E4E3EB] rounded-lg overflow-hidden mb-2">
                         <div 
@@ -127,7 +125,7 @@ const Faq = () => {
                         </div>
                         {openIndex === 5 && (
                             <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                <p className="text-gray-600">Consultia is designed for small, medium, and large consultancy firms, independent consultants, and clients seeking expert consultancy services across various industries in Africa. It caters to professionals who need a comprehensive platform to manage operations, ensure compliance, and enhance client relationships.</p>
                             </div>
                         )}
                     </div>
@@ -144,7 +142,7 @@ const Faq = () => {
                         </div>
                         {openIndex === 6 && (
                             <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                <p  className="text-gray-600">Consultia offers a range of features, including: Client onboarding and management, Task and project management, Compliance tracking tools, Invoicing and billing system, Reporting and analytics, Custom workflows and API access, Marketplace access to connect with potential clients, Communication tools (chat, email support) and 24/7 support.</p>
                             </div>
                         )}
                     </div>
@@ -161,7 +159,7 @@ const Faq = () => {
                         </div>
                         {openIndex === 7 && (
                             <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                <p className="text-gray-600">Consultia operates on a subscription-based model with three tiers—Essential, Professional, and Enterprise. Each tier comes with a set of features tailored to the needs of consultancies at different growth stages. Additionally, there is a 1% transaction fee on every paid invoice, capped at ₦50,000 per transaction.</p>
                             </div>
                         )}
                     </div>
@@ -178,7 +176,10 @@ const Faq = () => {
                         </div>
                         {openIndex === 8 && (
                             <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                <p className="text-gray-600"> Essential Plan: ₦3,500 per month - Best for small consultancies just getting started.
+                                Professional Plan: ₦9,000 per month - Ideal for growing firms needing advanced tools.
+                                Enterprise Plan: ₦15,000 per month - Suited for large consultancies requiring custom workflows and premium support.
+                                </p>
                             </div>
                         )}
                     </div>
@@ -195,7 +196,7 @@ const Faq = () => {
                         </div>
                         {openIndex === 9 && (
                             <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                <p className="text-gray-600">Yes, users can upgrade or downgrade their subscription plans at any time. Changes will take effect immediately.</p>
                             </div>
                         )}
                     </div>
@@ -212,7 +213,7 @@ const Faq = () => {
                         </div>
                         {openIndex === 10 && (
                             <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                <p className="text-gray-600">Yes, Consultia offers a 30-day free trial for new users. This allows consultants to explore the platform and access its features before committing to a subscription plan.</p>
                             </div>
                         )}
                     </div>
@@ -229,7 +230,11 @@ const Faq = () => {
                         </div>
                         {openIndex === 11 && (
                             <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                <p className="text-gray-600">Getting started is simple:<br />
+                                •	Sign up on the Consultia website and choose your plan.<br />
+                                •	Complete the onboarding process by providing the necessary business details and documents.<br />
+                                •	Start exploring the platform and utilizing its tools for your consultancy needs.
+                                </p>
                             </div>
                         )}
                     </div>
@@ -246,7 +251,7 @@ const Faq = () => {
                         </div>
                         {openIndex === 12 && (
                             <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                <p className="text-gray-600">Absolutely. Consultia uses industry-standard security measures, including data encryption, secure cloud storage, and regular security audits, to ensure that all user data is protected.</p>
                             </div>
                         )}
                     </div>
@@ -263,7 +268,7 @@ const Faq = () => {
                         </div>
                         {openIndex === 13 && (
                             <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                <p className="text-gray-600">Yes, Consultia offers API access in the Enterprise Plan, allowing users to integrate the platform with other business tools and software for seamless operations.</p>
                             </div>
                         )}
                     </div>
@@ -280,7 +285,13 @@ const Faq = () => {
                         </div>
                         {openIndex === 14 && (
                             <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                <p className="text-gray-600">Consultia provides:<br />
+                                •	Email Support: Available for all plans.<br />
+                                •	Priority Support: Included in the Professional and Enterprise plans.<br />
+                                •	24/7 Premium Support: Exclusive to the Enterprise Plan.<br />
+                                •	In-App Chat: For real-time assistance.<br />
+                                •	Ticketing System: To raise specific queries and track their status.
+                                </p>
                             </div>
                         )}
                     </div>
@@ -297,7 +308,7 @@ const Faq = () => {
                         </div>
                         {openIndex === 15 && (
                             <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                <p className="text-gray-600">Consultia provides compliance tracking tools that help users manage regulatory requirements, monitor client documentation, and stay up-to-date with compliance obligations.</p>
                             </div>
                         )}
                     </div>
@@ -314,7 +325,7 @@ const Faq = () => {
                         </div>
                         {openIndex === 16 && (
                             <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                <p className="text-gray-600">Yes, the Enterprise Plan allows for custom workflows and API access, making it possible to tailor the platform to fit unique business processes and requirements.</p>
                             </div>
                         )}
                     </div>
@@ -331,7 +342,7 @@ const Faq = () => {
                         </div>
                         {openIndex === 17 && (
                             <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                <p className="text-gray-600">Consultia is continuously improved, with updates rolled out regularly. These include feature enhancements, security updates, and performance optimizations to keep the platform running smoothly.</p>
                             </div>
                         )}
                     </div>
@@ -348,7 +359,7 @@ const Faq = () => {
                         </div>
                         {openIndex === 18 && (
                             <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                <p className="text-gray-600">If you cancel your subscription, your account will be restricted, limiting access to certain features. However, you will still be able to manage ongoing projects that clients have paid for until completion.</p>
                             </div>
                         )}
                     </div>

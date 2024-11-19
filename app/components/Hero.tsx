@@ -51,9 +51,9 @@ const Hero = () => {
 
                 <div className="pt-10 flex items-center justify-center lg:gap-10 gap-6 flex-wrap">
                 <div>
-                    <Link href="/getintouch">
+                    <Link href="/signupscreen">
                         <button className="bg-[#5B52B6] lg:w-[160px] w-[154px] lg:text-[16px] text-[12px] leading-[19.2px] font-semibold text-white p-[10px] rounded-[8px]">
-                        Book a Demo
+                            Find a Consultant
                         </button>
                     </Link>
                 </div>
@@ -61,7 +61,7 @@ const Hero = () => {
                 <div>
                     <Link href="/signupscreen">
                         <button className="border-2 border-custom-yellow lg:text-[16px] text-[12px] leading-[19.2px] font-semibold text-[#101828] p-[10px] lg:w-[159px] w-[145px] rounded-[8px]">
-                        Get Started
+                            Get Paying Clients
                         </button>
                     </Link>
                 </div>

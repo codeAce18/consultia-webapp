@@ -69,7 +69,7 @@ const Pricing = () => {
 
                             <div className="max-w-[374px] border-[1px] border-[#BEC3CE] p-[24px] rounded-[20px]">
                                 <h2 className="text-[#101828] text-[24px] leading-[29.05px] font-semibold">Essential Plan</h2>
-                                <h1 className="pt-[20px] text-[#101828] text-[36px] leading-[43.57px] font-semibold">{isAnnual ? "N120,000/Annum" : "N10,000/Month"}</h1>
+                                <h1 className="pt-[20px] text-[#101828] text-[36px] leading-[43.57px] font-semibold">{isAnnual ? "₦33,600/Annum" : "₦3,500/Month"}</h1>
                                 <p className="pt-[10px] text-[#5B52B6] text-[20px] leading-[30px] font-normal">14 Days Free Trials</p>
                                 <div className="pt-[35px] border-b-[1px] border-b-[#CFCDEC] pb-10">
                                     <button className="bg-[#5B52B6] text-white text-[16.5px] leading-[19.8px] font-bold w-[326px] p-[10px] rounded-[8px]">
@@ -97,7 +97,17 @@ const Pricing = () => {
                                         </div>
                                         <div className="flex items-center gap-[7px]">
                                             <Image src={tickCircle} alt="tickCircle" />
-                                            <p className="text-[16.5px] leading-[23.1px] font-normal text-[#101828]">Up to 5 clients</p>
+                                            <p className="text-[16.5px] leading-[23.1px] font-normal text-[#101828]">
+                                                {isAnnual ? (
+                                                    <>
+                                                    Up to <span className="font-bold">60</span> clients
+                                                    </>
+                                                ) : (
+                                                    <>
+                                                    Up to <span className="font-bold">5</span> clients
+                                                    </>
+                                                )}
+                                            </p>
                                         </div>
                                         <div className="flex items-center gap-[7px]">
                                             <Image src={tickCircle} alt="tickCircle" />
@@ -114,7 +124,7 @@ const Pricing = () => {
                             <div className="lg:pt-[55px]">
                                 <div className="max-w-[374px] lg:h-[677px]   border-[1px] border-[#BEC3CE] p-[24px] rounded-[20px]">
                                     <h2 className="text-[#101828] text-[24px] leading-[29.05px] font-semibold">Professional Plan</h2>
-                                    <h1 className="pt-[20px] text-[#101828] text-[36px] leading-[43.57px] font-semibold">{isAnnual ? "N360,000/Annum" : "N30,000/Month"}</h1>
+                                    <h1 className="pt-[20px] text-[#101828] text-[36px] leading-[43.57px] font-semibold">{isAnnual ? "₦86,400/Annum" : "₦9,000/Month"}</h1>
                                     <p className="pt-[10px] text-[#5B52B6] text-[20px] leading-[30px] font-normal">14 Days Free Trials</p>
                                     <div className="pt-[35px] border-b-[1px] border-b-[#CFCDEC] pb-10">
                                         <button className="bg-[#5B52B6] text-white text-[16.5px] leading-[19.8px] font-bold w-[326px] p-[10px] rounded-[8px]">
@@ -126,7 +136,7 @@ const Pricing = () => {
                                         <div className="flex flex-col items-left justify-start gap-y-[10px]">
                                             <div className="flex items-center gap-[7px]">
                                                 <Image src={tickCircle} alt="tickCircle" />
-                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-[#101828]">Everythig in essential</p>
+                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-[#101828]">Everything in essential</p>
                                             </div>
                                             <div className="flex items-center gap-[7px]">
                                                 <Image src={tickCircle} alt="tickCircle" />
@@ -142,7 +152,17 @@ const Pricing = () => {
                                             </div>
                                             <div className="flex items-center gap-[7px]">
                                                 <Image src={tickCircle} alt="tickCircle" />
-                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-[#101828]">Up to 20 clients</p>
+                                                <p className="text-[16.5px] leading-[23.1px] font-normal text-[#101828]">
+                                                {isAnnual ? (
+                                                    <>
+                                                    Up to <span className="font-bold">240</span> clients
+                                                    </>
+                                                ) : (
+                                                    <>
+                                                    Up to <span className="font-bold">20</span> clients
+                                                    </>
+                                                )}
+                                                </p>
                                             </div>
                                             <div className="flex items-center gap-[7px]">
                                                 <Image src={tickCircle} alt="tickCircle" />
@@ -170,7 +190,7 @@ const Pricing = () => {
                                             <h3 className="text-[#101828]  text-[10px] leading-[12px] font-bold">BEST VALUE</h3>
                                         </div>
                                     </div>
-                                    <h1 className="pt-[20px] text-white text-[36px] leading-[43.57px] font-semibold"> {isAnnual ? "N720,000/Annum" : "N60,000/Month"}</h1>
+                                    <h1 className="pt-[20px] text-white text-[36px] leading-[43.57px] font-semibold"> {isAnnual ? "₦144,000/Annum" : "₦15,000/Month"}</h1>
                                     <p className="pt-[10px] text-white text-[20px] leading-[30px] font-normal">14 Days Free Trials</p>
                                     <div className="pt-[35px] border-b-[1px] border-b-[#CFCDEC] pb-10">
                                         <button className="bg-white text-[#5B52B6] text-[16.5px] leading-[19.8px] font-bold w-[326px] p-[10px] rounded-[8px]">
@@ -243,7 +263,7 @@ const Pricing = () => {
                             </div>
                             {openIndex === 0 && (
                                 <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                    <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                    <p className="text-gray-600">Consultia is more than just a platform; it&apos;s a movement to redefine consultancy in Africa. It streamlines business management for consultancy firms while providing a dynamic marketplace for consultants to connect with clients. It combines essential business tools with advanced project and compliance management to empower consultants across Africa.</p>
                                 </div>
                             )}
                         </div>
@@ -260,7 +280,7 @@ const Pricing = () => {
                             </div>
                             {openIndex === 1 && (
                                 <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                    <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                    <p className="text-gray-600">Consultia is designed for small, medium, and large consultancy firms, independent consultants, and clients seeking expert consultancy services across various industries in Africa. It caters to professionals who need a comprehensive platform to manage operations, ensure compliance, and enhance client relationships.</p>
                                 </div>
                             )}
                         </div>
@@ -277,7 +297,7 @@ const Pricing = () => {
                             </div>
                             {openIndex === 2 && (
                                 <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                    <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                    <p className="text-gray-600">Consultia offers a range of features, including: Client onboarding and management, Task and project management, Compliance tracking tools, Invoicing and billing system, Reporting and analytics, Custom workflows and API access, Marketplace access to connect with potential clients, Communication tools (chat, email support) and 24/7 support.</p>
                                 </div>
                             )}
                         </div>
@@ -294,7 +314,7 @@ const Pricing = () => {
                             </div>
                             {openIndex === 3 && (
                                 <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                    <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                    <p className="text-gray-600">Consultia operates on a subscription-based model with three tiers—Essential, Professional, and Enterprise. Each tier comes with a set of features tailored to the needs of consultancies at different growth stages. Additionally, there is a 1% transaction fee on every paid invoice, capped at ₦50,000 per transaction.</p>
                                 </div>
                             )}
                         </div>
@@ -311,7 +331,11 @@ const Pricing = () => {
                             </div>
                             {openIndex === 4 && (
                                 <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                    <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                    <p className="text-gray-600">Getting started is simple:<br />
+                                    •	Sign up on the Consultia website and choose your plan.<br />
+                                    •	Complete the onboarding process by providing the necessary business details and documents.<br />
+                                    •	Start exploring the platform and utilizing its tools for your consultancy needs.
+                                    </p>
                                 </div>
                             )}
                         </div>
@@ -328,7 +352,7 @@ const Pricing = () => {
                             </div>
                             {openIndex === 5 && (
                                 <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                    <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                    <p className="text-gray-600">Yes, Consultia offers a 30-day free trial for new users. This allows consultants to explore the platform and access its features before committing to a subscription plan.</p>
                                 </div>
                             )}
                         </div>
@@ -345,7 +369,7 @@ const Pricing = () => {
                             </div>
                             {openIndex === 6 && (
                                 <div className="p-4 bg-gray-100 transition-all duration-300 ease-in-out">
-                                    <p>Your detailed answer goes here. This section will show when the accordion is open.</p>
+                                    <p className="text-gray-600">Absolutely. Consultia uses industry-standard security measures, including data encryption, secure cloud storage, and regular security audits, to ensure that all user data is protected.</p>
                                 </div>
                             )}
                         </div>
