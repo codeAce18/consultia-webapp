@@ -24,7 +24,7 @@ const features = () => {
                <div className="flex flex-col items-center justify-center text-center">
                     <h1 className="lg:text-[61px] text-[48px] lg:max-w-[1002px] max-w-[361px] lg:leading-[73.2px] leading-[57.6px] font-extrabold text-[#101828]">Powerful Features to Drive Your Consultancy&apos;s Success</h1>
 
-                    <p className="pt-[15px] text-[14px] leading-[21px] font-normal text-[#41404B]">From Client Onboarding to Invoicing, We&apos;ve Got You Covered</p>
+                    <p className="pt-[15px] text-[18px] leading-[21px] font-normal text-[#41404B]">From Client Onboarding to Invoicing, We&apos;ve Got You Covered</p>
                </div>
 
                <div>

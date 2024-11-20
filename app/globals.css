@@ -129,6 +129,13 @@ body {
 }
 
 
+@media screen and (max-width: 1200px) {
+  .Watermark {
+   display: none;
+  }
+}
+
+
 /* @media screen and (min-width: 2560px) {
   .Watermark {
     top: 910px;
