@@ -52,7 +52,7 @@ const Hero = () => {
                 <div className="pt-10 flex items-center justify-center lg:gap-10 gap-6 flex-wrap">
                 <div>
                     <Link href="/signupscreen">
-                        <button className="bg-[#5B52B6] lg:w-[160px] w-[154px] lg:text-[16px] text-[12px] leading-[19.2px] font-semibold text-white p-[10px] rounded-[8px]">
+                        <button className="bg-[#5B52B6] whitespace-nowrap lg:w-[160px] w-[154px] lg:text-[16px] text-[12px] leading-[19.2px] font-semibold text-white p-[10px] rounded-[8px]">
                             Find a Consultant
                         </button>
                     </Link>

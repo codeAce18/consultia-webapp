@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import check from "../public/assets/tick-circle.svg";
 
-import FeaturesImage1 from "../public/assets/FeaturesImage1.svg";
+import FeaturesImage1 from "../public/assets/FeaturesImage.svg";
 import FeaturesImage2 from "../public/assets/FeaturesImage2.svg";
 import FeaturesImage3 from "../public/assets/FeaturesImage3.svg";
 import FeaturesImage4 from "../public/assets/FeaturesImage4.svg";
