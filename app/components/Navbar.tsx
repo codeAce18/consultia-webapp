@@ -71,7 +71,10 @@ export function Navbar() {
           <div className="text-[14px] font-normal leading-[21px] text-[#101828]">
             <Link href="/features">Features</Link>
           </div>
-          <div className="relative  z-50">
+          <div className="relative  z-50"
+            onMouseEnter={() => setIsCompanyDropdownOpen(true)}
+            onMouseLeave={() => setIsCompanyDropdownOpen(false)}
+          >
             <button onClick={toggleCompanyDropdown} className="flex items-center">
               <span className="text-[14px] font-normal leading-[21px] text-[#101828]">Company</span>
               <Image 
@@ -103,7 +106,10 @@ export function Navbar() {
           <div className="text-[14px] font-normal leading-[21px] text-[#101828]">
             <Link href="/pricing">Pricing</Link>
           </div>
-          <div className="relative  z-50">
+          <div className="relative  z-50"
+            onMouseEnter={() => setIsSupportDropdownOpen(true)}
+            onMouseLeave={() => setIsSupportDropdownOpen(false)}
+          >
             <button onClick={toggleSupportDropdown} className="flex items-center text-[14px] font-normal leading-[21px] text-[#101828]">
               Support
               <Image 
