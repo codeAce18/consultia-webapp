@@ -32,19 +32,39 @@ export function LoginForm() {
   const form = useForm<FormSchema>({
     resolver: zodResolver(formSchema),
   })
+ 
 
   // Form submit handler
-  const onSubmit = (data: FormSchema) => {
-    console.log("Form data:", data)
+  const onSubmit = async (data: FormSchema) => {
+    try {
+      // Simple validation to ensure email and password are not empty
+      if (data.email && data.password) {
+        // Generate a simple token with the entered email
+        const token = btoa(JSON.stringify({
+          email: data.email,
+          timestamp: Date.now()
+        }));
+  
+        // Redirect to dashboard with token
+        // Replace with your actual dashboard URL
+        window.location.href = `https://consultia-client-dashboard2.vercel.app?token=${token}`;
+      } else {
+        // Handle empty credentials
+        alert('Please enter both email and password');
+      }
+    } catch (error) {
+      console.error("Login failed", error);
+      alert('An error occurred during login');
+    }
   }
 
   return (
-    <div  style={{
+    <div  style={{ 
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         height: "100vh",
-     // Equivalent to Tailwind's bg-gray-100
+    
       }}
     >
         <div className="mx-auto p-6  space-y-2  lg:w-[540px] w-[350px]"
@@ -131,7 +151,7 @@ export function LoginForm() {
           />
 
           {/* Submit button */}
-            <Link href="/">
+            {/* <Link href="/"> */}
                 <Button
                 className="lg:w-[400px] w-[300px] mx-auto"
                 type="submit"
@@ -150,7 +170,7 @@ export function LoginForm() {
                 >
                 Sign in
                 </Button>
-            </Link>
+            {/* // </Link> */}
            
         </form>
       </Form>
