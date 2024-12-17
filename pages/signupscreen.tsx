@@ -42,13 +42,27 @@ const SignupScreen = () => {
 
   const formValues = watch();
 
-  const onSubmit = (data: FormSchema) => {
-    const formDataWithPhoneCode = {
-      ...data,
-      phoneNumber: phoneCode + data.phoneNumber, // Combine phone code and number
-    };
-    console.log("Form data: ", formDataWithPhoneCode);
-    // Handle form submission, e.g., redirect to the dashboard
+  const onSubmit = async (data: FormSchema) => {
+    try {
+      // Combine all the signup data into a token
+      const signupData = {
+        firstName: data.firstName,
+        lastName: data.lastName,
+        phoneNumber: phoneCode + data.phoneNumber,
+        referralSource: data.referralSource,
+        email: email, // from the email state in the previous step
+        timestamp: Date.now()
+      };
+  
+      // Generate a base64 encoded token with signup information
+      const token = btoa(JSON.stringify(signupData));
+  
+      // Redirect to dashboard with token
+      window.location.href = `https://consultia-client-dashboard2.vercel.app?token=${token}`;
+    } catch (error) {
+      console.error("Signup failed", error);
+      alert('An error occurred during signup');
+    }
   };
 
 
@@ -458,22 +472,22 @@ const SignupScreen = () => {
 
                 {/* Submit Button */}
                 <div className="pt-[25px]">
-                  <Link href="/">
-                    <Button
-                      type="submit"
-                      style={{
-                        width: "100%",
-                        height: "48px",
-                        backgroundColor: isFormValid ? "#5B52B6" : "#CFCDEC",
-                        color: "white",
-                        fontWeight: "bold",
-                        borderRadius: "8px",
-                      }}
-                      disabled={!isFormmValid}
-                    >
-                      Go to Dashboard
-                    </Button>
-                  </Link>
+
+                  <Button
+                    type="submit"
+                    style={{
+                      width: "100%",
+                      height: "48px",
+                      backgroundColor: isFormValid ? "#5B52B6" : "#CFCDEC",
+                      color: "white",
+                      fontWeight: "bold",
+                      borderRadius: "8px",
+                    }}
+                    disabled={!isFormmValid}
+                  >
+                    Go to Dashboard
+                  </Button>
+
                 </div>
               </form>
             </div>

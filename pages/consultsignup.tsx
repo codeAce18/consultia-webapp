@@ -11,14 +11,13 @@ import { EyeOpenIcon, EyeClosedIcon } from "@radix-ui/react-icons"; // Radix UI 
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
-import Link from 'next/link';
+
 
 
 const formSchema = z.object({
     firstName: z.string().min(1, "First name is required."),
     lastName: z.string().min(1, "Last name is required."),
     phoneNumber: z.string().min(1, "Phone number is required."),
-    referralSource: z.string().nonempty("Referral source is required."),
     companyName: z.string().min(1, "Company name is required."),
     consultancyType: z.string().nonempty("Consultancy type is required."),
   });
@@ -41,14 +40,31 @@ const ConsultSignup = () => {
 
   const formValues = watch();
 
-  const onSubmit = (data: FormSchema) => {
-    const formDataWithPhoneCode = {
-      ...data,
-      phoneNumber: phoneCode + data.phoneNumber, // Combine phone code and number
-    };
-    console.log("Form data: ", formDataWithPhoneCode);
-    // Handle form submission, e.g., redirect to the dashboard
+  const onSubmit = async (data: FormSchema) => {
+    try {
+      // Combine all the signup data into a token
+      const signupData = {
+        firstName: data.firstName,
+        lastName: data.lastName,
+        phoneNumber: phoneCode + data.phoneNumber,
+        companyName: data.companyName,
+        consultancyType: data.consultancyType,
+        email: email, // from the email state in the previous step
+        timestamp: Date.now()
+      };
+  
+      // Generate a base64 encoded token with signup information
+      const token = btoa(JSON.stringify(signupData));
+  
+      // Redirect to dashboard with token
+      window.location.href = `https://consultia-consultant-dashboard.vercel.app?token=${token}`;
+    } catch (error) {
+      console.error("Signup failed", error);
+      alert('An error occurred during signup');
+    }
   };
+
+  
 
 
   const isFormValidd =
@@ -431,22 +447,20 @@ const ConsultSignup = () => {
 
                 {/* Submit Button */}
                 <div className="pt-[25px]">
-                  <Link href="/">
-                    <Button
-                      type="submit"
-                      style={{
-                        width: "100%",
-                        height: "48px",
-                        backgroundColor: isFormValidd ? "#5B52B6" : "#CFCDEC",
-                        color: "white",
-                        fontWeight: "bold",
-                        borderRadius: "8px",
-                      }}
-                      disabled={!isFormValidd}
-                    >
-                      Go to Dashboard
-                    </Button>
-                  </Link>
+                  <Button
+                    type="submit"
+                    style={{
+                      width: "100%",
+                      height: "48px",
+                      backgroundColor: isFormValidd ? "#5B52B6" : "#CFCDEC",
+                      color: "white",
+                      fontWeight: "bold",
+                      borderRadius: "8px",
+                    }}
+                    disabled={!isFormValidd}
+                  >
+                    Go to Dashboard
+                  </Button>
                 </div>
               </form>
             </div>
