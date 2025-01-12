@@ -1,7 +1,9 @@
 import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { Input } from "@/components/ui/input";  // Adjust the import path as needed
+
 import { Select } from "@/components/ui/select"
+
 type SubscriptionFormInputs = {
   businessEmail: string;
   firstName: string;
@@ -13,10 +15,7 @@ type SubscriptionFormInputs = {
 
 const countries = [
   { value: '', label: 'Country' },
-  { value: 'usa', label: 'United States' },
-  { value: 'canada', label: 'Canada' },
-  { value: 'uk', label: 'United Kingdom' },
-  // Add more countries as needed
+  { value: 'nigeria', label: 'Nigeria' },
 ];
 
 const SubscriptionForm: React.FC = () => {
