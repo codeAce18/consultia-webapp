@@ -1,22 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
+import axios from 'axios';
 import { Input } from "@/components/ui/input"; 
-import { Textarea } from "@/components/ui/textarea"
+import { Textarea } from "@/components/ui/textarea";
+
+import Image from "next/image"
+
+import BigGreenCheck from "../../public/assets/BigGreenCheck.svg"
 
 type GetInTouchFormInputs = {
-  name: string;
+  fullName: string;
   companyName: string;
   email: string;
   phoneNumber: string;
-  message: string;
+  requestMessage: string;
 };
 
 const GetInTouchForm: React.FC = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm<GetInTouchFormInputs>();
+  const { register, handleSubmit, formState: { errors }, reset } = useForm<GetInTouchFormInputs>();
+  const [successMessage, setSuccessMessage] = useState<string | null>(null);
 
-  const onSubmit: SubmitHandler<GetInTouchFormInputs> = (data) => {
-    console.log(data);
-    // handle form submission here (e.g., send data to a server)
+  const onSubmit: SubmitHandler<GetInTouchFormInputs> = async (data) => {
+    const formData = {
+      fullName: data.fullName,
+      companyName: data.companyName,
+      email: data.email,
+      phoneNumber: data.phoneNumber,
+      requestMessage: data.requestMessage
+    };
+
+    try {
+      const submitForm = await axios.post(
+        "https://consultia-main-backend-b7eb40c87c34.herokuapp.com/v2/api/contact-us", 
+        formData, 
+        {
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        }
+      );
+
+      if (submitForm.status === 200){
+        setSuccessMessage("Message Sent Successfully, Our Team Would Contact You Soonest!");
+        reset(); // Clear the form fields
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
   };
 
   return (
@@ -24,15 +54,15 @@ const GetInTouchForm: React.FC = () => {
       {/* Name Field */}
       <div className="lg:flex lg:flex-row lg:items-center lg:justify-start flex flex-col items-center justify-center gap-6 lg:gap-10">
         <div>
-          <label htmlFor="name">Name</label>
+          <label htmlFor="fullName">Full Name</label>
           <Input
-            id="name"
+            id="fullName"
             type="text"
-            {...register('name', { required: 'Name is required' })}
+            {...register('fullName', { required: 'Full name is required' })}
             className="mt-1 block lg:w-[268px] w-[300px]"
             placeholder="Full name"
           />
-          {errors.name && <span className="text-red-600">{errors.name.message}</span>}
+          {errors.fullName && <span className="text-red-600">{errors.fullName.message}</span>}
         </div>
 
         {/* Company Name Field */}
@@ -77,23 +107,29 @@ const GetInTouchForm: React.FC = () => {
         </div>
       </div>
       
-
       {/* Message Field */}
       <div className="flex flex-col items-center justify-center lg:flex lg:flex-col lg:items-start lg:justify-start">
         <div>
-          <label htmlFor="message">How can we help?</label>
+          <label htmlFor="requestMessage">How can we help?</label>
           <Textarea
-            id="message"
-            {...register('message', { required: 'Message is required' })}
+            id="requestMessage"
+            {...register('requestMessage', { required: 'Message is required' })}
             className="mt-1 block lg:w-[575px]  w-[300px] "
             placeholder="Message..."
           />
-          {errors.message && <span className="text-red-600">{errors.message.message}</span>}
+          {errors.requestMessage && <span className="text-red-600">{errors.requestMessage.message}</span>}
         </div>
 
         <button type="submit" className="bg-[#5B52B6] lg:w-[575px]  w-[300px]  text-[15.13px] font-semibold leading-[24px] text-white py-2 px-4 rounded mt-4">
           Submit
         </button>
+
+        <div>
+          {successMessage && <p className="mt-4 flex items-center justify-center gap-2 text-green-600 max-w-[250px] lg:max-w-none">
+            <Image src={BigGreenCheck} alt='BigGreenCheck' />
+            {successMessage}
+          </p>}
+        </div>
       </div>
       
     </form>

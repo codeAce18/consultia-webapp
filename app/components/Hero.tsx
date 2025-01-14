@@ -60,7 +60,7 @@ const Hero = () => {
 
                 <div>
                     <Link href="/signupscreen">
-                        <button className="border-2 border-custom-yellow lg:text-[16px] text-[12px] leading-[19.2px] font-semibold text-[#101828] p-[10px] lg:w-[159px] w-[145px] rounded-[8px]">
+                        <button className="border-2 whitespace-nowrap  border-custom-yellow lg:text-[16px] text-[12px] leading-[19.2px] font-semibold text-[#101828] p-[10px] lg:w-[189px] w-[145px] rounded-[8px]">
                             Get Paying Clients
                         </button>
                     </Link>
